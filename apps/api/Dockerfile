@@ -7,4 +7,4 @@ RUN pip install --no-cache-dir -e '.[dev]'
 
 COPY . .
 
-CMD ["uvicorn", "atlas_api.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+CMD ["uvicorn", "atlas_api.main:app", "--app-dir", "src", "--host", "0.0.0.0", "--port", "8000", "--reload"]
