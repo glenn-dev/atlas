@@ -21,8 +21,12 @@ atlas/
 │   ├── api/
 │   └── web/
 ├── docs/
-│   ├── adr/
+│   ├── product/
 │   ├── architecture/
+│   ├── adr/
+│   ├── sprints/
+│   ├── development/
+│   ├── handoffs/
 │   ├── enerlink/
 │   └── learning/
 ├── experiments/
@@ -33,6 +37,8 @@ atlas/
 ├── docker-compose.yml
 └── Makefile
 ```
+
+See [`docs/README.md`](docs/README.md) for the documentation index and guidance on where project information belongs.
 
 ## First run
 
