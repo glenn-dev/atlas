@@ -14,7 +14,7 @@ Atlas is Glenn's supervised personal knowledge and AI platform, designed as a lo
 - Current branch: `master`
 - Default branch: `master` (`origin/master`)
 - Working tree before this task: clean
-- Latest commit: `701e9cb chore: establish AI collaboration workflow`
+- Project Genesis v0.1 checkpoint: `e415ec4 docs: establish project genesis convention`
 - Remote: `https://github.com/glenn-dev/atlas.git`
 
 ## Current stack
@@ -51,18 +51,44 @@ The in-app browser could not be initialized in this session because its runtime 
 
 Atlas incubates the Project Genesis Convention in
 [`docs/conventions/project-genesis.md`](../docs/conventions/project-genesis.md), with a reusable
-template at [`templates/project/genesis.md`](../templates/project/genesis.md). A root-level
-`genesis.md`, when a project deliberately adopts one, preserves its durable purpose, principles,
-constraints, boundaries, non-goals, and definition of success. It does not replace the README,
-agent instructions, ADRs, working context, tasks, or handoff state.
+template at [`templates/project/genesis.md`](../templates/project/genesis.md) and a manual builder
+at [`.ai/prompts/project-genesis.md`](prompts/project-genesis.md). The convention defines the
+practice and its rules, the template provides an optional document scaffold, and the builder is a
+reusable agent workflow for evidence-based, human-reviewed Genesis proposals.
+
+A root-level `genesis.md`, when a project deliberately adopts one, preserves its durable purpose,
+principles, constraints, boundaries, non-goals, and definition of success. It does not replace
+the README, agent instructions, ADRs, working context, tasks, or handoff state.
 
 Atlas does not yet have a root-level `genesis.md`. Its content must come from a separate,
 deliberate discussion rather than being inferred from the new convention.
 
-## Current objective
+## Completed
 
-The first Project Genesis Convention is documented and integrated into Atlas's agent workflow.
-Atlas's own Genesis remains intentionally undefined.
+- Project Genesis Convention v0.1 is established at
+  `docs/conventions/project-genesis.md` and remains intentionally Atlas-incubated.
+- Its reusable scaffold is at `templates/project/genesis.md`.
+- `AGENTS.md` integrates Genesis-alignment review for material decisions.
+- The reusable manual builder is at `.ai/prompts/project-genesis.md`.
+- No Skill, registry, automation, or cross-project orchestration has been implemented.
+
+## Architectural understanding
+
+- Atlas is the personal context and orchestration layer above independent domain projects; each
+  project continues to own its domain logic.
+- Atlas should grow primarily by extracting reusable needs discovered while building real
+  projects, not through speculative platform development.
+- `local-agent-bridge` is conceptually infrastructure for controlled local-agent capabilities.
+  It does not own project intent or the Project Genesis Convention, and the current manual
+  Genesis workflow does not require it.
+
+## Deliberately deferred
+
+- Atlas's own root-level `genesis.md`.
+- Turning Project Genesis into a Skill.
+- Automated project discovery, a project registry, or automated cross-project Genesis access.
+- Additional `local-agent-bridge` capabilities.
+- Larger Atlas architecture work not required by current projects.
 
 ## Important constraints
 
@@ -74,8 +100,12 @@ Atlas's own Genesis remains intentionally undefined.
 - Do not copy confidential Enerlink code, credentials, customer information, internal documents, or proprietary information into Atlas.
 - AWS, Kubernetes, OCPP, authentication, and AI integrations are outside the current implementation task unless explicitly introduced by a future task.
 
-## Next action
+## Recommended re-entry
 
-Hold a deliberate conversation about whether Atlas should adopt its own root-level Genesis and
-what durable intent it should contain. The archived frontend-to-GraphQL task still has a separate
-manual browser-verification follow-up.
+When Atlas resumes, first inspect `docs/conventions/project-genesis.md`, this context,
+`.ai/tasks/current.md`, and `docs/handoffs/current-context.md`.
+
+The natural next conceptual task is: “Conduct a deliberate Project Genesis exercise for Atlas
+itself.” Atlas should not become higher priority than Gouda, Republic Aces, inmundus, or other
+value-producing projects merely to build infrastructure in advance. The archived
+frontend-to-GraphQL task also retains a separate manual browser-verification follow-up.

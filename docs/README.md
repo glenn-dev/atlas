@@ -18,10 +18,14 @@ This directory is the durable source of truth for Atlas context that should not 
 
 - [Vision](product/vision.md) · [Principles](product/principles.md) · [Roadmap](product/roadmap.md)
 - [Project Genesis Convention](conventions/project-genesis.md) ·
-  [Project Genesis template](../templates/project/genesis.md)
+  [Project Genesis template](../templates/project/genesis.md) ·
+  [manual Project Genesis builder](../.ai/prompts/project-genesis.md)
 - [Architecture overview](architecture/overview.md) · [Domain model](architecture/domain-model.md)
 - [Initial stack ADR](adr/0001-initial-stack.md)
 - [Current sprint](sprints/current.md) · [Current context](handoffs/current-context.md)
 - [Setup](development/setup.md) · [Commands](development/commands.md) · [Troubleshooting](development/troubleshooting.md)
 
 Update the relevant document when project context changes. Add an ADR for durable architectural choices, and add a handoff update when work is paused or resumed.
+
+For Project Genesis, the convention defines the practice and its rules, the template scaffolds a
+`genesis.md`, and the builder provides the reusable agent workflow for preparing one.

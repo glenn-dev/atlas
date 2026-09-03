@@ -2,7 +2,7 @@
 
 ## Title
 
-Formalize the Project Genesis Convention
+Add the manual Project Genesis builder and close the Atlas session
 
 ## Status
 
@@ -10,50 +10,40 @@ Completed
 
 ## Context
 
-Atlas is incubating a convention in which projects may keep a root-level `genesis.md` to
-preserve durable project intent. The convention must distinguish Genesis from usage,
-agent-workflow, decision, working-context, task, and handoff documentation.
-
-Atlas does not yet have its own Genesis. Defining it requires a separate deliberate discussion.
+Project Genesis Convention v0.1 is approved and preserved at
+`docs/conventions/project-genesis.md`, with its scaffold at `templates/project/genesis.md`. The
+convention now needs a concise manual workflow that can be used from sibling projects before any
+Skill or automation is justified.
 
 ## Objective
 
-Document the first formal version of the Project Genesis Convention, provide a reusable generic
-template, and integrate Genesis alignment into Atlas's agent workflow without adding application
-code, dependencies, automation, or a root-level Atlas `genesis.md`.
+Add a reusable manual Project Genesis builder, make it discoverable, and synchronize Atlas's
+working context and handoff for a clean future re-entry without changing application behavior or
+expanding Atlas architecture.
 
 ## Acceptance criteria
 
-- The canonical convention is concise, operational, and explicitly Atlas-incubated.
-- The convention covers purpose, appropriate content, adoption criteria, document boundaries,
-  agent interpretation, conflict handling, evolution, portability, structure, anti-patterns, and
-  lightweight adoption.
-- A generic, optional-section project template is available.
-- `AGENTS.md` requires Genesis review for material direction, scope, architecture, boundary, or
-  long-term behavior decisions and prohibits silent conflicts or casual rewrites.
-- Atlas's documentation index and current working context reference the convention.
-- No Atlas root-level `genesis.md`, application code, dependency, automation, or external
-  repository is changed.
-- Relevant documentation validation and `git diff --check` pass.
-
-## Constraints
-
-- Keep the work documentation-only and avoid unnecessary process.
-- Preserve established repository documentation style and paths where practical.
-- Do not commit or push.
+- A concise builder in `.ai/prompts/project-genesis.md` references the canonical convention and
+  template and requires evidence-separated, human-reviewed Genesis proposals.
+- The convention, template, and builder have distinct documented roles.
+- Atlas context and handoff preserve completed work, architectural understanding, deliberate
+  deferrals, and the recommended re-entry point.
+- The approved v0.1 convention and template remain unchanged.
+- No application code, dependency, infrastructure, runtime configuration, Skill, registry,
+  automation, orchestration, or sibling repository is changed.
+- Documentation validation and `git diff --check` pass.
+- The scoped changes are committed as `docs: add project genesis builder workflow` without a
+  push.
 
 ## Completion report
 
-- Created the canonical convention at `docs/conventions/project-genesis.md` and the reusable
-  template at `templates/project/genesis.md`.
-- Added proportional Genesis reading, alignment, conflict, and change-reporting rules to
-  `AGENTS.md`.
-- Updated the root and documentation indexes, working context, and established handoff document.
-- Archived the preceding blocked frontend-to-GraphQL task without changing its outcome.
-- Kept the work documentation-only; no root-level Atlas `genesis.md`, application code,
-  dependencies, automation, or external repositories were changed.
-- Validation passed: referenced local files exist, Atlas has no root-level `genesis.md`, the
-  application/infrastructure scope diff is empty, and `git diff --check` reports no errors. The
-  repository has no configured Markdown documentation lint command.
-- Remaining follow-up: test the convention through real adoption, hold the deliberate Atlas
-  Genesis discussion, and separately complete the archived browser-verification follow-up.
+- Added the manual builder at `.ai/prompts/project-genesis.md` using the repository's established
+  prompt location.
+- Added a concise documentation-index reference distinguishing the convention, template, and
+  builder.
+- Archived the completed v0.1 convention task and replaced it with this completed closure task.
+- Updated `.ai/context.md` and `docs/handoffs/current-context.md` with the durable re-entry state.
+- Left the approved convention and template unchanged.
+- Kept the change documentation-only and within Atlas; no sibling repository was touched.
+- Recommended re-entry: inspect the convention, context, current task, and handoff, then conduct
+  a deliberate Project Genesis exercise for Atlas itself when that work has priority.
