@@ -5,6 +5,7 @@ This directory is the durable source of truth for Atlas context that should not 
 ## Where information belongs
 
 - [`product/`](product/): vision, principles, goals, and longer-term roadmap.
+- [`conventions/`](conventions/): Atlas-incubated practices intended for reuse across projects.
 - [`architecture/`](architecture/): system structure, boundaries, and domain model.
 - [`adr/`](adr/): accepted or proposed architecture decision records.
 - [`sprints/`](sprints/): current execution focus and archived sprint context.
@@ -16,6 +17,8 @@ This directory is the durable source of truth for Atlas context that should not 
 ## Current documents
 
 - [Vision](product/vision.md) · [Principles](product/principles.md) · [Roadmap](product/roadmap.md)
+- [Project Genesis Convention](conventions/project-genesis.md) ·
+  [Project Genesis template](../templates/project/genesis.md)
 - [Architecture overview](architecture/overview.md) · [Domain model](architecture/domain-model.md)
 - [Initial stack ADR](adr/0001-initial-stack.md)
 - [Current sprint](sprints/current.md) · [Current context](handoffs/current-context.md)

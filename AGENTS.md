@@ -4,13 +4,27 @@
 
 Before making changes, read:
 
-1. `.ai/context.md`
-2. `.ai/tasks/current.md`
-3. `.ai/README.md`
-4. `README.md`
-5. `docs/sprints/current.md`, if it exists
-6. Relevant files under `docs/architecture/`, if they exist
-7. Relevant accepted ADRs under `docs/adr/`
+1. `genesis.md`, if it exists and the work may materially affect product direction, scope,
+   architecture, project boundaries, or long-term behavior
+2. `.ai/context.md`
+3. `.ai/tasks/current.md`
+4. `.ai/README.md`
+5. `README.md`
+6. `docs/sprints/current.md`, if it exists
+7. Relevant files under `docs/architecture/`, if they exist
+8. Relevant accepted ADRs under `docs/adr/`
+
+## Genesis alignment
+
+When a root-level `genesis.md` exists:
+
+- Treat it as the project's durable intent, not as an implementation specification.
+- Surface material conflicts between a request and Genesis rather than silently overriding it.
+- Do not rewrite Genesis during ordinary feature or maintenance work.
+- Call out any deliberate Genesis change explicitly in the task and completion report.
+
+See [`docs/conventions/project-genesis.md`](docs/conventions/project-genesis.md) for the full
+convention.
 
 ## Repository inspection
 

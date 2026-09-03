@@ -22,6 +22,7 @@ atlas/
 │   └── web/
 ├── docs/
 │   ├── product/
+│   ├── conventions/
 │   ├── architecture/
 │   ├── adr/
 │   ├── sprints/
@@ -34,11 +35,18 @@ atlas/
 ├── infrastructure/
 │   ├── docker/
 │   └── kubernetes/
+├── templates/
+│   └── project/
 ├── docker-compose.yml
 └── Makefile
 ```
 
 See [`docs/README.md`](docs/README.md) for the documentation index and guidance on where project information belongs.
+
+Atlas currently incubates the [Project Genesis Convention](docs/conventions/project-genesis.md),
+with a reusable [project template](templates/project/genesis.md). Atlas does not yet have its own
+root-level `genesis.md`; writing one requires a separate, deliberate definition of its durable
+intent.
 
 ## First run
 

@@ -2,7 +2,7 @@
 
 ## Last updated
 
-2026-07-25
+2026-09-03
 
 ## Project purpose
 
@@ -14,7 +14,7 @@ Atlas is Glenn's supervised personal knowledge and AI platform, designed as a lo
 - Current branch: `master`
 - Default branch: `master` (`origin/master`)
 - Working tree before this task: clean
-- Latest commit: `210f8bc fix dockerfile`
+- Latest commit: `701e9cb chore: establish AI collaboration workflow`
 - Remote: `https://github.com/glenn-dev/atlas.git`
 
 ## Current stack
@@ -47,9 +47,22 @@ This task independently verified that the Docker Compose services are running, t
 
 The in-app browser could not be initialized in this session because its runtime failed with `Cannot redefine property: process`; the rendered React page was therefore not independently inspected.
 
+## Documentation conventions
+
+Atlas incubates the Project Genesis Convention in
+[`docs/conventions/project-genesis.md`](../docs/conventions/project-genesis.md), with a reusable
+template at [`templates/project/genesis.md`](../templates/project/genesis.md). A root-level
+`genesis.md`, when a project deliberately adopts one, preserves its durable purpose, principles,
+constraints, boundaries, non-goals, and definition of success. It does not replace the README,
+agent instructions, ADRs, working context, tasks, or handoff state.
+
+Atlas does not yet have a root-level `genesis.md`. Its content must come from a separate,
+deliberate discussion rather than being inferred from the new convention.
+
 ## Current objective
 
-The frontend-to-GraphQL communication issue is fixed at the API boundary with origin-scoped CORS. The remaining limitation is visual browser verification in an environment where the in-app browser runtime could not initialize.
+The first Project Genesis Convention is documented and integrated into Atlas's agent workflow.
+Atlas's own Genesis remains intentionally undefined.
 
 ## Important constraints
 
@@ -63,4 +76,6 @@ The frontend-to-GraphQL communication issue is fixed at the API boundary with or
 
 ## Next action
 
-Review [`.ai/tasks/current.md`](tasks/current.md), then manually refresh `http://localhost:5173` in a working browser and archive the task if the page displays `Atlas is alive`.
+Hold a deliberate conversation about whether Atlas should adopt its own root-level Genesis and
+what durable intent it should contain. The archived frontend-to-GraphQL task still has a separate
+manual browser-verification follow-up.
