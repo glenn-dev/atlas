@@ -6,7 +6,7 @@ Updated: 2026-09-10
 
 Atlas is at the v0.1 foundation stage. The repository contains a FastAPI/Strawberry API, a
 React/Vite web client, Docker Compose configuration, a PostgreSQL service definition, initial
-domain documentation, and one accepted ADR.
+domain documentation, and two accepted ADRs.
 
 Atlas now incubates a documented Project Genesis Convention and a reusable project template.
 The convention defines a root-level `genesis.md` as slow-moving, durable project intent and

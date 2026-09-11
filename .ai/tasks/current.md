@@ -6,7 +6,7 @@ Record sovereign knowledge and Project → Atlas architecture decisions
 
 ## Status
 
-Completed — awaiting diff approval
+Completed
 
 ## Context
 
@@ -45,5 +45,5 @@ state, and leave implementation deliberately deferred.
 - Indexed the new ADR and synchronized working context and handoff state.
 - Archived the previously completed Project Genesis builder task.
 - Left implementation and all explicitly excluded mechanisms deferred.
-- Validation passed; the documentation-only diff is awaiting Glenn's approval and has not been
-  committed or pushed.
+- Validation passed. Glenn approved the architecture checkpoint; it was committed as
+  `3e13383d0cf175d5cfca0408cd47676f6b5a466e` and pushed to `origin/master`.
