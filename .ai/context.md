@@ -2,7 +2,7 @@
 
 ## Last updated
 
-2026-09-03
+2026-09-10
 
 ## Project purpose
 
@@ -16,6 +16,8 @@ Atlas is Glenn's supervised personal knowledge and AI platform, designed as a lo
 - Working tree before this task: clean
 - Project Genesis v0.1 checkpoint: `e415ec4 docs: establish project genesis convention`
 - Remote: `https://github.com/glenn-dev/atlas.git`
+- Architecture checkpoint baseline: `c3d1f5c`, equal to refreshed `origin/master` before the
+  documentation changes (`0` ahead, `0` behind)
 
 ## Current stack
 
@@ -74,8 +76,21 @@ deliberate discussion rather than being inferred from the new convention.
 
 ## Architectural understanding
 
-- Atlas is the personal context and orchestration layer above independent domain projects; each
-  project continues to own its domain logic.
+- D1–D5 are frozen in
+  [`docs/adr/0002-sovereign-knowledge-and-project-boundaries.md`](../docs/adr/0002-sovereign-knowledge-and-project-boundaries.md).
+- Atlas must preserve its identity, durable knowledge, and fundamental continuity independently
+  of any particular provider, model, agent, or interface.
+- Canonical durable knowledge remains under Glenn's control in open, portable, reconstructable
+  forms. External processors and indexes cannot be sole custodians. Git is foundational; GitHub
+  is a replaceable host.
+- Providers, models, agents, interfaces, and human actors are distinct. Provider-specific
+  capabilities belong behind replaceable boundaries, while broader protocols and taxonomies must
+  emerge from real use.
+- Each project remains authoritative over its domain and local state. Atlas is authoritative over
+  transversal ecosystem knowledge and relationships, with canonical, derived, observed, and
+  inferred information distinguished and traceable to durable evidence.
+- Project → Atlas flow should elevate meaningful durable changes or checkpoints, not raw commits,
+  tests, prompts, agent actions, or exhaustive logs.
 - Atlas should grow primarily by extracting reusable needs discovered while building real
   projects, not through speculative platform development.
 - `local-agent-bridge` is conceptually infrastructure for controlled local-agent capabilities.
@@ -87,7 +102,11 @@ deliberate discussion rather than being inferred from the new convention.
 - Atlas's own root-level `genesis.md`.
 - Turning Project Genesis into a Skill.
 - Automated project discovery, a project registry, or automated cross-project Genesis access.
-- Additional `local-agent-bridge` capabilities.
+- Project → Atlas ingestion and a concrete `ProjectEvent` schema.
+- Project change journals, including `work_logs.md`.
+- Adapters, agent or capability registries, automation, orchestration, and a universal agent
+  protocol or exhaustive capability taxonomy.
+- Additional `local-agent-bridge` capabilities or repository changes.
 - Larger Atlas architecture work not required by current projects.
 
 ## Important constraints
@@ -102,10 +121,13 @@ deliberate discussion rather than being inferred from the new convention.
 
 ## Recommended re-entry
 
-When Atlas resumes, first inspect `docs/conventions/project-genesis.md`, this context,
-`.ai/tasks/current.md`, and `docs/handoffs/current-context.md`.
+When Atlas resumes, first inspect ADR 0002, the architecture overview and domain model, this
+context, `.ai/tasks/current.md`, and `docs/handoffs/current-context.md`.
 
-The natural next conceptual task is: “Conduct a deliberate Project Genesis exercise for Atlas
-itself.” Atlas should not become higher priority than Gouda, Republic Aces, inmundus, or other
-value-producing projects merely to build infrastructure in advance. The archived
+The next conceptual question is the concrete Project → Atlas boundary: what durable project
+change or checkpoint should look like and what role, if any, `local-agent-bridge` or portable
+project change journals should have. This is a design question, not authorization to implement
+ingestion, a schema, journals, adapters, automation, or orchestration. Atlas's own Genesis remains
+separately deferred. Atlas should not become higher priority than Gouda, Republic Aces, inmundus,
+or other value-producing projects merely to build infrastructure in advance. The archived
 frontend-to-GraphQL task also retains a separate manual browser-verification follow-up.

@@ -2,48 +2,48 @@
 
 ## Title
 
-Add the manual Project Genesis builder and close the Atlas session
+Record sovereign knowledge and Project → Atlas architecture decisions
 
 ## Status
 
-Completed
+Completed — awaiting diff approval
 
 ## Context
 
-Project Genesis Convention v0.1 is approved and preserved at
-`docs/conventions/project-genesis.md`, with its scaffold at `templates/project/genesis.md`. The
-convention now needs a concise manual workflow that can be used from sibling projects before any
-Skill or automation is justified.
+A deliberate architecture discussion froze five decisions covering Atlas independence,
+knowledge sovereignty and portability, provider/model/agent/interface separation, authority and
+provenance, and the semantic Project → Atlas boundary. They must be made durable without turning
+the principles into an implementation specification.
 
 ## Objective
 
-Add a reusable manual Project Genesis builder, make it discoverable, and synchronize Atlas's
-working context and handoff for a clean future re-entry without changing application behavior or
-expanding Atlas architecture.
+Record D1–D5 in the existing architecture structure, reconcile related terminology and session
+state, and leave implementation deliberately deferred.
 
 ## Acceptance criteria
 
-- A concise builder in `.ai/prompts/project-genesis.md` references the canonical convention and
-  template and requires evidence-separated, human-reviewed Genesis proposals.
-- The convention, template, and builder have distinct documented roles.
-- Atlas context and handoff preserve completed work, architectural understanding, deliberate
-  deferrals, and the recommended re-entry point.
-- The approved v0.1 convention and template remain unchanged.
-- No application code, dependency, infrastructure, runtime configuration, Skill, registry,
-  automation, orchestration, or sibling repository is changed.
+- One cohesive accepted ADR records D1–D5 as architectural principles.
+- The architecture overview and domain model clarify project authority, transversal Atlas
+  authority, provenance, canonical/derived/observed/inferred information, replaceability, and the
+  meaningful-change boundary.
+- The documentation index makes the ADR discoverable.
+- Working context and handoff state say D1–D5 are frozen, implementation is deferred, and the next
+  conceptual question is the concrete Project → Atlas boundary and the possible role of
+  `local-agent-bridge` or project change journals.
+- The existing Project Genesis Convention remains unchanged.
+- No application code, dependencies, infrastructure, runtime configuration, sibling repository,
+  ingestion, schema, journal, adapter, registry, Skill, automation, or orchestration is changed.
 - Documentation validation and `git diff --check` pass.
-- The scoped changes are committed as `docs: add project genesis builder workflow` without a
-  push.
+- No commit or push occurs without explicit approval.
 
 ## Completion report
 
-- Added the manual builder at `.ai/prompts/project-genesis.md` using the repository's established
-  prompt location.
-- Added a concise documentation-index reference distinguishing the convention, template, and
-  builder.
-- Archived the completed v0.1 convention task and replaced it with this completed closure task.
-- Updated `.ai/context.md` and `docs/handoffs/current-context.md` with the durable re-entry state.
-- Left the approved convention and template unchanged.
-- Kept the change documentation-only and within Atlas; no sibling repository was touched.
-- Recommended re-entry: inspect the convention, context, current task, and handoff, then conduct
-  a deliberate Project Genesis exercise for Atlas itself when that work has priority.
+- Added ADR 0002 to preserve D1–D5 as one coherent set of accepted architectural constraints.
+- Updated maintained architecture documentation with concise authority, provenance,
+  replaceability, and Project → Atlas boundary language.
+- Clarified that the knowledge classifications are conceptual and do not define a schema.
+- Indexed the new ADR and synchronized working context and handoff state.
+- Archived the previously completed Project Genesis builder task.
+- Left implementation and all explicitly excluded mechanisms deferred.
+- Validation passed; the documentation-only diff is awaiting Glenn's approval and has not been
+  committed or pushed.

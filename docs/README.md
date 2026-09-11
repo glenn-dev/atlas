@@ -21,7 +21,8 @@ This directory is the durable source of truth for Atlas context that should not 
   [Project Genesis template](../templates/project/genesis.md) ·
   [manual Project Genesis builder](../.ai/prompts/project-genesis.md)
 - [Architecture overview](architecture/overview.md) · [Domain model](architecture/domain-model.md)
-- [Initial stack ADR](adr/0001-initial-stack.md)
+- [Initial stack ADR](adr/0001-initial-stack.md) ·
+  [Sovereign knowledge and project boundaries ADR](adr/0002-sovereign-knowledge-and-project-boundaries.md)
 - [Current sprint](sprints/current.md) · [Current context](handoffs/current-context.md)
 - [Setup](development/setup.md) · [Commands](development/commands.md) · [Troubleshooting](development/troubleshooting.md)
 
