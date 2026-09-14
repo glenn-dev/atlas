@@ -82,15 +82,18 @@ At the end of every implementation task:
 9. Update the status of `.ai/tasks/current.md`.
 10. Do not commit or push unless explicitly instructed.
 
-## Source-of-truth hierarchy
+## Authority by question
 
-When information conflicts, use this order:
+Authority depends on the question being answered; there is no single global hierarchy.
 
-1. Actual repository code and configuration.
-2. Tests and executable behavior.
-3. Accepted ADRs.
-4. Maintained project documentation.
-5. `.ai/context.md`.
-6. Conversation summaries or task descriptions.
+- `genesis.md` is authoritative for durable purpose, principles, hard boundaries, non-goals,
+  stewardship, and long-term intent.
+- Code, configuration, and tests are authoritative for current executable behavior.
+- Accepted ADRs record architectural decisions and must remain compatible with Genesis.
+- Maintained product and architecture documentation explains current system understanding.
+- `.ai` context, task records, and handoffs represent operational working state.
 
-Report conflicts instead of choosing silently.
+When sources conflict, identify the type of conflict—durable intent, executable behavior,
+architectural decision, documented understanding, or operational state—and surface the evidence.
+Do not silently allow one layer to redefine another. In particular, legacy code or an ADR cannot
+redefine Genesis's durable intent, and Genesis does not establish what the current code executes.

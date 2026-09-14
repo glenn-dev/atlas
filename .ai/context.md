@@ -7,8 +7,8 @@
 ## Project purpose
 
 Atlas exists to extend Glenn's ability to understand, remember, connect, decide, and act across
-relevant life context. The proposed [Atlas Genesis](../genesis.md) records the intent approved
-conceptually by Glenn in the human-led Foundation Review; the exact diff awaits his approval.
+relevant life context. The accepted [Atlas Genesis](../genesis.md) records the intent approved
+by Glenn in the human-led Foundation Review and the subsequent explicit diff approval.
 Human authority is ultimate; operational autonomy may be authorized within inspectable,
 bounded, and revocable limits, without requiring interactive approval of every action.
 
@@ -20,8 +20,10 @@ bounded, and revocable limits, without requiring interactive approval of every a
 - Working tree before this task: clean
 - Project Genesis v0.1 checkpoint: `e415ec4 docs: establish project genesis convention`
 - Remote: `https://github.com/glenn-dev/atlas.git`
-- Genesis checkpoint baseline: `98375cea886c5df22e73869fc52722c246c0c46d`, equal to refreshed
-  `origin/master` before edits (`0` ahead, `0` behind); working tree clean and root Genesis absent.
+- Accepted Genesis checkpoint: `726f4ad1fd643d92456b114bfc08bade8b37a031`
+  (`docs: establish Atlas genesis`), committed and pushed to `origin/master`.
+- Hardening baseline: HEAD and refreshed `origin/master` both equal that checkpoint
+  (`0` ahead, `0` behind); working tree clean before this pass.
 - Architecture decisions were committed at `3e13383`; the checkpoint was closed at `98375ce`.
 
 ## Legacy application stack
@@ -82,12 +84,15 @@ A root-level `genesis.md`, when a project deliberately adopts one, preserves its
 principles, constraints, boundaries, non-goals, and definition of success. It does not replace
 the README, agent instructions, ADRs, working context, tasks, or handoff state.
 
-The root-level Genesis is now drafted from Glenn's approved intent, not inferred from the legacy
+The root-level Genesis is accepted from Glenn's approved intent, not inferred from the legacy
 runtime. Glenn accepted 2026-07-08 as the historical reference for “First written,” now recorded
 in Genesis. It is not an exact timestamp of conception. The date provenance item is resolved.
 
 ## Completed
 
+- Atlas Genesis was explicitly approved by Glenn, committed as `726f4ad`, and pushed to
+  `origin/master`. Its substantive checkpoint record is preserved in
+  [the completed task](tasks/archive/2026-09-14-establish-atlas-genesis.md).
 - Project Genesis Convention v0.1 is established at
   `docs/conventions/project-genesis.md` and remains intentionally Atlas-incubated.
 - Its reusable scaffold is at `templates/project/genesis.md`.
@@ -120,8 +125,8 @@ in Genesis. It is not an exact timestamp of conception. The date provenance item
 
 ## Deliberately deferred
 
-- Post-Genesis reconciliation of current product, architecture, and sprint documentation; the
-  exact findings and minimum document set are recorded in [the current task](tasks/current.md).
+- Execution of post-Genesis documentation reconciliation and legacy v0.1 retirement planning;
+  [the current task](tasks/current.md) defines that next work without authorizing deletion.
 - Legacy application retirement and explicit review of ADR 0001's future status. ADR 0001 remains
   unchanged historical evidence; ADR 0002 remains accepted and unchanged.
 - Turning Project Genesis into a Skill.
@@ -135,7 +140,7 @@ in Genesis. It is not an exact timestamp of conception. The date provenance item
 
 ## Important constraints
 
-- The repository is the source of truth.
+- Interpret repository sources by question as defined in [AGENTS.md](../AGENTS.md).
 - Inspect code before making assumptions.
 - Prefer small, coherent changes.
 - Do not introduce dependencies without justification.
@@ -146,9 +151,10 @@ in Genesis. It is not an exact timestamp of conception. The date provenance item
 ## Recommended re-entry
 
 First review [genesis.md](../genesis.md), [the current task](tasks/current.md), and the handoff.
-The immediate checkpoint is Glenn's explicit approval of the Genesis diff; do not commit or push.
-Product and architecture cleanup follows separately after approval. The old staged roadmap and
-learning-log milestone are historical, not authoritative future direction. The concrete
+The Genesis checkpoint is complete. The next task is post-Genesis reconciliation and legacy v0.1
+retirement planning; this hardening pass only records that task and does not begin its execution
+or authorize deletion. The old staged roadmap and learning-log milestone are historical, not
+authoritative future direction. The concrete
 Project → Atlas boundary remains deferred, not the current task. No implementation is authorized
 by these follow-ups. The archived browser-verification item remains a historical open item to
 disposition during application retirement, not a Genesis acceptance criterion.

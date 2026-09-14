@@ -1,6 +1,10 @@
 # Atlas Documentation Index
 
-This directory is the durable source of truth for Atlas context that should not depend on a chat transcript.
+This directory preserves maintained product and architecture understanding, architectural
+decisions, and supporting documentation. Root [genesis.md](../genesis.md) is authoritative for
+durable intent; code, configuration, and tests describe current executable behavior, while
+context, task records, and handoffs describe operational state. Interpret sources by the question
+being answered, as defined in [AGENTS.md](../AGENTS.md), rather than as a global hierarchy.
 
 ## Where information belongs
 
@@ -16,9 +20,10 @@ This directory is the durable source of truth for Atlas context that should not 
 
 ## Current documents
 
-- [Atlas Genesis](../genesis.md): durable intent proposed after the human-led Foundation Review;
-  the exact diff awaits Glenn's approval. Product, architecture, and sprint documents still carry
-  historical direction pending the cleanup recorded in the [current task](../.ai/tasks/current.md).
+- [Atlas Genesis](../genesis.md): durable intent approved by Glenn, committed and pushed to
+  `origin/master` as `726f4ad` (`docs: establish Atlas genesis`). Product, architecture, and sprint
+  documents still carry historical direction pending the cleanup recorded in the
+  [current task](../.ai/tasks/current.md).
 - [Vision](product/vision.md) · [Principles](product/principles.md) · [Roadmap](product/roadmap.md)
 - [Project Genesis Convention](conventions/project-genesis.md) ·
   [Project Genesis template](../templates/project/genesis.md) ·

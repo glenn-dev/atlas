@@ -4,9 +4,10 @@ Updated: 2026-09-14
 
 ## State
 
-The formal Atlas Genesis checkpoint has a root [Genesis draft](../../genesis.md) awaiting Glenn's
-explicit approval of the diff. Its durable intent was approved conceptually in a human-led
-Foundation Review. No commit or push is authorized.
+The formal Atlas Genesis checkpoint is complete. Glenn explicitly approved [Atlas Genesis](../../genesis.md),
+committed as `726f4ad1fd643d92456b114bfc08bade8b37a031` (`docs: establish Atlas genesis`) and
+pushed to `origin/master`. The completed task is
+[archived](../../.ai/tasks/archive/2026-09-14-establish-atlas-genesis.md).
 
 The repository still contains the legacy FastAPI/Strawberry, React/Vite, PostgreSQL, and Docker
 Compose learning scaffold and two accepted ADRs. Glenn's Foundation Review establishes that
@@ -34,17 +35,19 @@ They establish independence; sovereign, portable knowledge; separation of provid
 agents, interfaces, and actors; project authority with provenance; and meaningful-change-based
 Project → Atlas flow.
 
-Review the exact Genesis diff before any commit. It preserves ultimate human authority while
+The accepted Genesis preserves ultimate human authority while
 allowing authorized, inspectable, bounded, and revocable delegation without interactive approval
 for every action. Glenn accepted 2026-07-08 as the historical reference for “First written,” now
 recorded in Genesis. It is not an exact timestamp of conception. The date provenance item is resolved.
 
-The [current task](../../.ai/tasks/current.md) records reconciliation findings and the smallest
-set of current documents needing post-Genesis cleanup. The Learning Log milestone, Enerlink-first
+The [current task](../../.ai/tasks/current.md) defines post-Genesis reconciliation and legacy v0.1
+retirement planning. It does not authorize deletion, and this hardening pass does not execute that
+next task. The [Genesis archive](../../.ai/tasks/archive/2026-09-14-establish-atlas-genesis.md)
+preserves reconciliation findings and the smallest document set. The Learning Log milestone, Enerlink-first
 direction, staged roadmap, privileged Technology/LearningEntry concepts, and PostgreSQL foundation
 assumption are historical direction. They are not authorization for future work. ADR 0001 remains
 unchanged historical evidence; any supersession requires a separate explicit architectural task.
-ADR 0002 remains accepted and consistent with the draft.
+ADR 0002 remains accepted and consistent with Genesis.
 
 The concrete Project → Atlas boundary and implementation remain deferred. The archived
 frontend-to-GraphQL task's manual browser check remains a historical open item to disposition
@@ -73,7 +76,7 @@ during retirement, not a Genesis acceptance criterion. Runtime was not reverifie
 
 ## Deliberately deferred
 
-- Current product, architecture, and sprint documentation cleanup after Genesis approval.
+- Execution of the next task's documentation reconciliation and legacy v0.1 retirement planning.
 - Legacy application retirement and explicit review of ADR 0001's future status.
 - A Project Genesis Skill.
 - Automated project discovery or registry and automated cross-project Genesis access.
@@ -95,7 +98,7 @@ during retirement, not a Genesis acceptance criterion. Runtime was not reverifie
 
 ## Useful entry points
 
-- Durable intent awaiting diff approval: [Atlas Genesis](../../genesis.md)
+- Accepted durable intent: [Atlas Genesis](../../genesis.md)
 - Product direction: [`../product/vision.md`](../product/vision.md)
 - Project Genesis Convention: [`../conventions/project-genesis.md`](../conventions/project-genesis.md)
 - Manual Project Genesis builder: [`../../.ai/prompts/project-genesis.md`](../../.ai/prompts/project-genesis.md)
