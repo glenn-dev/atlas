@@ -22,8 +22,10 @@ bounded, and revocable limits, without requiring interactive approval of every a
 - Remote: `https://github.com/glenn-dev/atlas.git`
 - Accepted Genesis checkpoint: `726f4ad1fd643d92456b114bfc08bade8b37a031`
   (`docs: establish Atlas genesis`), committed and pushed to `origin/master`.
-- Hardening baseline: HEAD and refreshed `origin/master` both equal that checkpoint
-  (`0` ahead, `0` behind); working tree clean before this pass.
+- Completed Genesis authority-model hardening: `4ae5c3be6222d52b055e2063e20ac22e667b2f7e`
+  (`docs: harden Atlas genesis authority model`), approved, committed, and pushed to `origin/master`.
+- Operational closure baseline: HEAD and `origin/master` both equal the hardening checkpoint
+  (`0` ahead, `0` behind); working tree clean before these corrections.
 - Architecture decisions were committed at `3e13383`; the checkpoint was closed at `98375ce`.
 
 ## Legacy application stack
@@ -152,8 +154,8 @@ in Genesis. It is not an exact timestamp of conception. The date provenance item
 
 First review [genesis.md](../genesis.md), [the current task](tasks/current.md), and the handoff.
 The Genesis checkpoint is complete. The next task is post-Genesis reconciliation and legacy v0.1
-retirement planning; this hardening pass only records that task and does not begin its execution
-or authorize deletion. The old staged roadmap and learning-log milestone are historical, not
+retirement planning. The authority-model hardening is complete; the next task remains planned,
+not started, and does not authorize deletion. The old staged roadmap and learning-log milestone are historical, not
 authoritative future direction. The concrete
 Project → Atlas boundary remains deferred, not the current task. No implementation is authorized
 by these follow-ups. The archived browser-verification item remains a historical open item to

@@ -41,8 +41,9 @@ for every action. Glenn accepted 2026-07-08 as the historical reference for “F
 recorded in Genesis. It is not an exact timestamp of conception. The date provenance item is resolved.
 
 The [current task](../../.ai/tasks/current.md) defines post-Genesis reconciliation and legacy v0.1
-retirement planning. It does not authorize deletion, and this hardening pass does not execute that
-next task. The [Genesis archive](../../.ai/tasks/archive/2026-09-14-establish-atlas-genesis.md)
+retirement planning. It remains planned, not started, and does not authorize deletion. The Genesis
+authority-model hardening was approved, committed as `4ae5c3b`, and pushed to `origin/master`.
+The [Genesis archive](../../.ai/tasks/archive/2026-09-14-establish-atlas-genesis.md)
 preserves reconciliation findings and the smallest document set. The Learning Log milestone, Enerlink-first
 direction, staged roadmap, privileged Technology/LearningEntry concepts, and PostgreSQL foundation
 assumption are historical direction. They are not authorization for future work. ADR 0001 remains
@@ -93,7 +94,7 @@ during retirement, not a Genesis acceptance criterion. Runtime was not reverifie
 - A project's Genesis is durable intent and should not be rewritten during ordinary feature work.
 - Human review is authoritative for final Genesis content.
 - Do not place employer secrets, customer information, proprietary code, credentials, or internal URLs in Atlas.
-- Do not elevate Atlas infrastructure work above Gouda, Republic Aces, inmundus, or other
+- Do not elevate Atlas infrastructure work above Gouda, Aces, inmundus, or other
   value-producing projects merely to build ahead of demand.
 
 ## Useful entry points

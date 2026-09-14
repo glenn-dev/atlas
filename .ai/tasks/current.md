@@ -7,8 +7,8 @@ Post-Genesis reconciliation and legacy v0.1 retirement planning
 ## Status
 
 Planned; not started. This task records the next work and does not authorize deletion.
-The preceding Genesis hardening diff awaits explicit approval; no commit or push is authorized
-for that hardening pass.
+The preceding Genesis authority-model hardening was approved, committed as `4ae5c3b`
+(`docs: harden Atlas genesis authority model`), and pushed to `origin/master`.
 
 ## Context
 
