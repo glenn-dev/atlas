@@ -2,11 +2,15 @@
 
 ## Last updated
 
-2026-09-10
+2026-09-14
 
 ## Project purpose
 
-Atlas is Glenn's supervised personal knowledge and AI platform, designed as a long-term “second brain.” It connects knowledge, learning, projects, decisions, people, and documents while keeping Glenn in control. Atlas is not merely a chatbot or a task manager.
+Atlas exists to extend Glenn's ability to understand, remember, connect, decide, and act across
+relevant life context. The proposed [Atlas Genesis](../genesis.md) records the intent approved
+conceptually by Glenn in the human-led Foundation Review; the exact diff awaits his approval.
+Human authority is ultimate; operational autonomy may be authorized within inspectable,
+bounded, and revocable limits, without requiring interactive approval of every action.
 
 ## Repository state
 
@@ -16,12 +20,18 @@ Atlas is Glenn's supervised personal knowledge and AI platform, designed as a lo
 - Working tree before this task: clean
 - Project Genesis v0.1 checkpoint: `e415ec4 docs: establish project genesis convention`
 - Remote: `https://github.com/glenn-dev/atlas.git`
-- Architecture checkpoint baseline: `c3d1f5c`, equal to refreshed `origin/master` before the
-  documentation changes (`0` ahead, `0` behind)
+- Genesis checkpoint baseline: `98375cea886c5df22e73869fc52722c246c0c46d`, equal to refreshed
+  `origin/master` before edits (`0` ahead, `0` behind); working tree clean and root Genesis absent.
+- Architecture decisions were committed at `3e13383`; the checkpoint was closed at `98375ce`.
 
-## Current stack
+## Legacy application stack
 
-The repository confirms:
+Atlas predates this application. Glenn's Foundation Review identifies its origin in conversations
+with ChatGPT about AI memory limitations, capabilities, tools, and durable personal context. The
+application was an exploratory learning scaffold associated with his transition into Enerlink;
+it is not the technical foundation future Atlas implementations must preserve.
+
+Source inspection for this checkpoint confirms:
 
 - Python: present in `apps/api`
 - FastAPI: implemented by the API
@@ -34,9 +44,14 @@ The repository confirms:
 
 ## Verified implementation
 
-The v0.1 foundation includes a FastAPI health endpoint, a Strawberry GraphQL schema with `hello` and `sprintGoal` queries, and a React/Vite web page that fetches and displays those fields. Docker Compose defines API, web, and PostgreSQL services with local ports and a configurable `VITE_GRAPHQL_URL`. The API has one health test; PostgreSQL is currently infrastructure only.
+The legacy scaffold includes a FastAPI health endpoint, a Strawberry GraphQL schema with `hello`
+and `sprintGoal` queries, and a React/Vite page displaying those fields. The goal and UI still
+refer to learning entries and Enerlink onboarding. Compose defines API, web, and PostgreSQL
+services with local ports and a configurable `VITE_GRAPHQL_URL`. The API has one health test and
+two CORS tests; PostgreSQL is infrastructure only. No runtime was changed or started for this
+documentation checkpoint.
 
-## Verified local behavior
+## Previously recorded local behavior
 
 Glenn supplied the original observations that:
 
@@ -45,9 +60,14 @@ Glenn supplied the original observations that:
 - GraphQL is accessible at `http://localhost:8000/graphql`.
 - The frontend previously displayed `Failed to fetch`.
 
-This task independently verified that the Docker Compose services are running, the frontend is served at `http://localhost:5173`, `/health` returns 200, and a direct GraphQL query returns both expected fields. Before the fix, a browser-style preflight to `/graphql` returned `405 Method Not Allowed`. After the fix, the expected origin preflight returns 200, the unexpected origin is rejected with 400, and the cross-origin GraphQL POST returns 200 with `Atlas is alive`.
+The archived frontend-to-GraphQL task recorded running Compose services, a frontend served at
+`http://localhost:5173`, `/health` returning 200, and a direct GraphQL query returning both expected
+fields. It recorded a pre-fix preflight response of 405, then an expected-origin preflight of 200,
+unexpected-origin rejection of 400, and a cross-origin POST returning 200 with `Atlas is alive`.
+These are historical observations, not runtime verification performed in this Genesis checkpoint.
 
-The in-app browser could not be initialized in this session because its runtime failed with `Cannot redefine property: process`; the rendered React page was therefore not independently inspected.
+That earlier task could not initialize the in-app browser (`Cannot redefine property: process`),
+so its rendered-page verification remained incomplete.
 
 ## Documentation conventions
 
@@ -62,8 +82,9 @@ A root-level `genesis.md`, when a project deliberately adopts one, preserves its
 principles, constraints, boundaries, non-goals, and definition of success. It does not replace
 the README, agent instructions, ADRs, working context, tasks, or handoff state.
 
-Atlas does not yet have a root-level `genesis.md`. Its content must come from a separate,
-deliberate discussion rather than being inferred from the new convention.
+The root-level Genesis is now drafted from Glenn's approved intent, not inferred from the legacy
+runtime. Glenn accepted 2026-07-08 as the historical reference for “First written,” now recorded
+in Genesis. It is not an exact timestamp of conception. The date provenance item is resolved.
 
 ## Completed
 
@@ -99,7 +120,10 @@ deliberate discussion rather than being inferred from the new convention.
 
 ## Deliberately deferred
 
-- Atlas's own root-level `genesis.md`.
+- Post-Genesis reconciliation of current product, architecture, and sprint documentation; the
+  exact findings and minimum document set are recorded in [the current task](tasks/current.md).
+- Legacy application retirement and explicit review of ADR 0001's future status. ADR 0001 remains
+  unchanged historical evidence; ADR 0002 remains accepted and unchanged.
 - Turning Project Genesis into a Skill.
 - Automated project discovery, a project registry, or automated cross-project Genesis access.
 - Project → Atlas ingestion and a concrete `ProjectEvent` schema.
@@ -121,13 +145,10 @@ deliberate discussion rather than being inferred from the new convention.
 
 ## Recommended re-entry
 
-When Atlas resumes, first inspect ADR 0002, the architecture overview and domain model, this
-context, `.ai/tasks/current.md`, and `docs/handoffs/current-context.md`.
-
-The next conceptual question is the concrete Project → Atlas boundary: what durable project
-change or checkpoint should look like and what role, if any, `local-agent-bridge` or portable
-project change journals should have. This is a design question, not authorization to implement
-ingestion, a schema, journals, adapters, automation, or orchestration. Atlas's own Genesis remains
-separately deferred. Atlas should not become higher priority than Gouda, Republic Aces, inmundus,
-or other value-producing projects merely to build infrastructure in advance. The archived
-frontend-to-GraphQL task also retains a separate manual browser-verification follow-up.
+First review [genesis.md](../genesis.md), [the current task](tasks/current.md), and the handoff.
+The immediate checkpoint is Glenn's explicit approval of the Genesis diff; do not commit or push.
+Product and architecture cleanup follows separately after approval. The old staged roadmap and
+learning-log milestone are historical, not authoritative future direction. The concrete
+Project → Atlas boundary remains deferred, not the current task. No implementation is authorized
+by these follow-ups. The archived browser-verification item remains a historical open item to
+disposition during application retirement, not a Genesis acceptance criterion.

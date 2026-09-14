@@ -16,6 +16,9 @@ This directory is the durable source of truth for Atlas context that should not 
 
 ## Current documents
 
+- [Atlas Genesis](../genesis.md): durable intent proposed after the human-led Foundation Review;
+  the exact diff awaits Glenn's approval. Product, architecture, and sprint documents still carry
+  historical direction pending the cleanup recorded in the [current task](../.ai/tasks/current.md).
 - [Vision](product/vision.md) · [Principles](product/principles.md) · [Roadmap](product/roadmap.md)
 - [Project Genesis Convention](conventions/project-genesis.md) ·
   [Project Genesis template](../templates/project/genesis.md) ·

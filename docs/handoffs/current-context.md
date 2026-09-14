@@ -1,17 +1,22 @@
 # Current Project Context
 
-Updated: 2026-09-10
+Updated: 2026-09-14
 
 ## State
 
-Atlas is at the v0.1 foundation stage. The repository contains a FastAPI/Strawberry API, a
-React/Vite web client, Docker Compose configuration, a PostgreSQL service definition, initial
-domain documentation, and two accepted ADRs.
+The formal Atlas Genesis checkpoint has a root [Genesis draft](../../genesis.md) awaiting Glenn's
+explicit approval of the diff. Its durable intent was approved conceptually in a human-led
+Foundation Review. No commit or push is authorized.
+
+The repository still contains the legacy FastAPI/Strawberry, React/Vite, PostgreSQL, and Docker
+Compose learning scaffold and two accepted ADRs. Glenn's Foundation Review establishes that
+Atlas originated earlier in conversations about AI memory, capabilities, tools, and durable
+personal context. The application is historical implementation, not Atlas's identity or required
+future foundation. Retirement is a separate later task.
 
 Atlas now incubates a documented Project Genesis Convention and a reusable project template.
 The convention defines a root-level `genesis.md` as slow-moving, durable project intent and
-integrates Genesis alignment into agent workflow. Atlas itself does not yet have a root-level
-Genesis.
+integrates Genesis alignment into agent workflow.
 
 Project Genesis Convention v0.1 is approved and preserved at
 [`../conventions/project-genesis.md`](../conventions/project-genesis.md). Its reusable scaffold is
@@ -29,14 +34,21 @@ They establish independence; sovereign, portable knowledge; separation of provid
 agents, interfaces, and actors; project authority with provenance; and meaningful-change-based
 Project → Atlas flow.
 
-Implementation is deliberately deferred. The next conceptual question is the concrete Project →
-Atlas boundary: what a durable project change or checkpoint should be and what role, if any,
-`local-agent-bridge` or portable project change journals should have. Atlas's own Genesis remains
-a separate deferred exercise and must not be inferred from current product documentation.
+Review the exact Genesis diff before any commit. It preserves ultimate human authority while
+allowing authorized, inspectable, bounded, and revocable delegation without interactive approval
+for every action. Glenn accepted 2026-07-08 as the historical reference for “First written,” now
+recorded in Genesis. It is not an exact timestamp of conception. The date provenance item is resolved.
 
-The earlier frontend-to-GraphQL task is archived with a remaining manual browser-verification
-follow-up. The local learning-log workflow remains the next application milestone in the
-roadmap.
+The [current task](../../.ai/tasks/current.md) records reconciliation findings and the smallest
+set of current documents needing post-Genesis cleanup. The Learning Log milestone, Enerlink-first
+direction, staged roadmap, privileged Technology/LearningEntry concepts, and PostgreSQL foundation
+assumption are historical direction. They are not authorization for future work. ADR 0001 remains
+unchanged historical evidence; any supersession requires a separate explicit architectural task.
+ADR 0002 remains accepted and consistent with the draft.
+
+The concrete Project → Atlas boundary and implementation remain deferred. The archived
+frontend-to-GraphQL task's manual browser check remains a historical open item to disposition
+during retirement, not a Genesis acceptance criterion. Runtime was not reverified here.
 
 ## Architectural understanding
 
@@ -61,7 +73,8 @@ roadmap.
 
 ## Deliberately deferred
 
-- Atlas's own root-level `genesis.md`.
+- Current product, architecture, and sprint documentation cleanup after Genesis approval.
+- Legacy application retirement and explicit review of ADR 0001's future status.
 - A Project Genesis Skill.
 - Automated project discovery or registry and automated cross-project Genesis access.
 - Project → Atlas ingestion or a concrete `ProjectEvent` schema.
@@ -82,6 +95,7 @@ roadmap.
 
 ## Useful entry points
 
+- Durable intent awaiting diff approval: [Atlas Genesis](../../genesis.md)
 - Product direction: [`../product/vision.md`](../product/vision.md)
 - Project Genesis Convention: [`../conventions/project-genesis.md`](../conventions/project-genesis.md)
 - Manual Project Genesis builder: [`../../.ai/prompts/project-genesis.md`](../../.ai/prompts/project-genesis.md)

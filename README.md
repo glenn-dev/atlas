@@ -2,6 +2,11 @@
 
 Atlas is Glenn's personal knowledge and learning platform: a long-lived, auditable system for organizing people, projects, decisions, learning, and documents, with AI assistance under explicit user control.
 
+The proposed [Atlas Genesis](genesis.md) captures the human-approved Foundation Review intent;
+the exact diff awaits Glenn's approval. The application, Sprint 1 goal, and initial domain below
+describe the historical learning scaffold, not a required foundation for future Atlas.
+Reconciliation of current product and architecture documents is deferred to post-Genesis cleanup.
+
 ## Sprint 1 goal
 
 Create a small but executable foundation aligned with the technologies used at Enerlink:
@@ -44,9 +49,7 @@ atlas/
 See [`docs/README.md`](docs/README.md) for the documentation index and guidance on where project information belongs.
 
 Atlas currently incubates the [Project Genesis Convention](docs/conventions/project-genesis.md),
-with a reusable [project template](templates/project/genesis.md). Atlas does not yet have its own
-root-level `genesis.md`; writing one requires a separate, deliberate definition of its durable
-intent.
+with a reusable [project template](templates/project/genesis.md).
 
 ## First run
 
