@@ -171,4 +171,4 @@ in the existing task archive when creating the sole retirement execution task.
 
 Read-only planning completed; baseline and link checks passed; no files were modified during that
 phase. Glenn's approval and refinements authorize the coherent retirement preparation tracked in
-[the execution task](../current.md). No unresolved intent question blocks execution.
+[the execution task](2026-09-14-retire-initial-atlas-learning-application.md). No unresolved intent question blocks execution.

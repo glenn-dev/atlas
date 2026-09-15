@@ -14,14 +14,18 @@ interactive approval for every action. Apply [AGENTS.md](../AGENTS.md)'s authori
 ## Repository and checkpoint state
 
 - Branch: `master`; default branch: `master`.
-- Planning and execution baseline: `58369c2cf4995081e961993b2232b84a3222692f`.
-- Before edits, `git fetch origin` succeeded; HEAD and refreshed `origin/master` matched that
-  baseline with 0/0 ahead/behind and a clean working tree.
+- Historical retirement planning and execution baseline: `58369c2cf4995081e961993b2232b84a3222692f`.
+- Completed retirement checkpoint: `38e2057be8973b7075a92901c40cba16c8b1cd62`
+  (`refactor: retire initial Atlas learning application`), explicitly reviewed by Glenn, committed
+  and pushed to `origin/master`.
+- Before operational closure edits, `git fetch origin` verified HEAD and refreshed `origin/master`
+  at the retirement checkpoint, with 0/0 ahead/behind and a clean working tree.
 - Glenn approved the [disposition plan](tasks/archive/2026-09-14-post-genesis-retirement-planning.md)
   and two refinements: ADR 0003 authorizes retirement in this checkpoint, and retired historical
   references use plain-text repository paths plus the baseline rather than provider URLs.
-- The retirement diff is prepared in the working tree for review. No changes are staged,
-  committed or pushed. The [execution task](tasks/current.md) tracks validation and review.
+- The [completed execution record](tasks/archive/2026-09-14-retire-initial-atlas-learning-application.md)
+  preserves preparation, validation, final approval and commit/push evidence.
+- [Current task state](tasks/current.md): no active task and no authorized follow-on implementation.
 - The application and approved support material are removed. The repository is deliberately
   runtime-less; no replacement architecture or implementation has been selected.
 
@@ -48,8 +52,8 @@ application. No Skill, registry or cross-project orchestration has been implemen
 The accepted Genesis originated in Glenn's Foundation Review, not an inference from the old code.
 The [Genesis task archive](tasks/archive/2026-09-14-establish-atlas-genesis.md) preserves its provenance.
 Glenn accepted 2026-07-08 as the historical “First written” reference, not an exact conception timestamp.
-Genesis was established at `726f4ad` and its authority model hardened at `4ae5c3b`; the baseline above
-includes the subsequent operational closure.
+Genesis was established at `726f4ad` and its authority model hardened at `4ae5c3b`; the historical
+retirement baseline `58369c2` includes the subsequent Genesis operational closure.
 
 ## Retirement and historical limitations
 
@@ -74,7 +78,8 @@ unimplemented and are not a queue of authorized work. The manual Genesis workflo
 
 ## Re-entry
 
-Review [the current task](tasks/current.md), the prepared retirement diff and
-[the handoff](../docs/handoffs/current-context.md). The next action is Glenn's review before any commit;
-no follow-on feature, sprint or roadmap is created by this checkpoint. Preserve confidentiality and
-external authority boundaries under Genesis and AGENTS.
+The retirement checkpoint is complete and pushed. [Current task state](tasks/current.md) and
+[the handoff](../docs/handoffs/current-context.md) record that no follow-on implementation is
+authorized. Future work remains driven by demonstrated needs; no feature, sprint or roadmap is
+created by this closure. Preserve confidentiality and external authority boundaries under Genesis
+and AGENTS.
