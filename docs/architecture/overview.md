@@ -1,35 +1,45 @@
 # Architecture Overview
 
-Atlas is currently a small Docker Compose application with a Python API, a TypeScript web client, and PostgreSQL reserved for structured persistence.
+Atlas currently has no application runtime or selected replacement runtime architecture.
+[ADR 0003](../adr/0003-retire-initial-learning-application.md) authorizes retirement of the initial
+learning application as an Atlas foundation. The repository retains durable intent, decisions,
+conventions, templates and working context.
 
-Its durable architecture is also constrained by the independence, sovereignty, separation,
-authority, provenance, and meaningful-change decisions in
-[ADR 0002](../adr/0002-sovereign-knowledge-and-project-boundaries.md). These principles describe
-what future designs must preserve; they do not imply that ingestion, adapters, registries, or
-orchestration exist today.
+[Genesis](../../genesis.md) governs durable intent.
+[ADR 0002](../adr/0002-sovereign-knowledge-and-project-boundaries.md) records D1–D5 as constraints on
+future designs. They do not imply that an integration, datastore, agent or orchestration system has
+been implemented.
 
-## Runtime components
+## Accepted architectural constraints
 
-- `apps/api`: FastAPI application with a Strawberry GraphQL endpoint and `/health` endpoint.
-- `apps/web`: React and Vite client that calls the GraphQL endpoint.
-- `db`: PostgreSQL 16 container used by the local environment.
-- `docker-compose.yml`: Connects the services, publishes local ports, and waits for a healthy database before starting the API.
+- **Independence:** Atlas's identity, durable knowledge and continuity must survive replacement or
+  disappearance of a particular provider, model, agent or interface.
+- **Sovereignty and portability:** canonical durable knowledge remains under Glenn's control in
+  open, portable and reconstructable forms. External processors and indexes cannot be its sole
+  custodians. Git is part of the portable foundation under ADR 0002; GitHub is a replaceable host.
+- **Separation:** providers, models, agents, interfaces and human actors have distinct roles.
+  Provider-specific capabilities belong behind replaceable boundaries. Protocols and taxonomies
+  must emerge from demonstrated use.
+- **Authority and provenance:** projects retain authority over their own domains and local state.
+  Atlas preserves transversal knowledge and relationships with traceable evidence and distinctions
+  between canonical, derived, observed and inferred information.
+- **Meaningful change:** future Project → Atlas integration should carry meaningful durable changes
+  or checkpoints. Raw commits, prompts, tests, agent activity and exhaustive logs are not elevated
+  merely because they occurred.
 
-## Boundaries
+The [conceptual vocabulary](domain-model.md) explains these terms without defining a schema or
+requiring a particular representation.
 
-The API owns the application contract and domain behavior. The web client consumes that contract. Infrastructure configuration belongs in the repository-level Compose and infrastructure directories. Experiments remain isolated from the core application until they have clear product value.
+## Knowledge-protection validation
 
-Each connected project remains authoritative over its own domain and project-local state. Atlas
-owns transversal ecosystem knowledge and relationships, with provenance back to durable project
-evidence; it is not the master copy of every project's content. Future Project → Atlas integration
-should carry meaningful durable changes or checkpoints rather than raw commits, prompts, tests,
-agent activity, or exhaustive logs.
+Future features that transform or delete durable knowledge require automated tests appropriate to
+those behaviors. This preserves the distinct testing guidance from the retired product-principles
+document. It is conditional guidance for future implementation, not authorization to build a
+feature or introduce a test framework now.
 
-Atlas's canonical durable knowledge must remain under Glenn's control in open, portable,
-reconstructable forms. Providers, models, agents, interfaces, AI indexes, cloud services, and
-hosting services are replaceable capabilities around that foundation. Git is part of the
-portable foundation; GitHub is one replaceable host.
+## Open implementation choices
 
-## Current state
-
-The v0.1 foundation has a health endpoint, a GraphQL hello query, and a basic web client. The domain model is intentionally small; persistence and richer workflows are roadmap work.
+Future architecture, storage, interfaces, agents, automation and implementation choices remain
+open until demonstrated Atlas needs justify them under Genesis and ADR 0002. Sovereignty does not
+by itself select a local runtime topology. No replacement roadmap, sprint or implementation is
+established by retiring the original application.

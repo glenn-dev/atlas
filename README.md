@@ -1,84 +1,60 @@
 # Atlas
 
-Atlas is Glenn's personal knowledge and learning platform: a long-lived, auditable system for organizing people, projects, decisions, learning, and documents, with AI assistance under explicit user control.
+Atlas exists to extend Glenn's ability to understand, remember, connect, decide and act across
+relevant life context. [Atlas Genesis](genesis.md) defines its durable purpose, principles and
+boundaries, including ultimate human authority and authorized, inspectable, bounded and revocable
+delegation.
 
-The accepted [Atlas Genesis](genesis.md) captures the Foundation Review intent approved by Glenn
-and was committed and pushed to `origin/master` as `726f4ad` (`docs: establish Atlas genesis`).
-The application, Sprint 1 goal, and initial domain below describe the historical learning
-scaffold, not a required foundation for future Atlas.
-Reconciliation of current product and architecture documents is deferred to post-Genesis cleanup.
+## Current repository
 
-## Sprint 1 goal
+Atlas currently has no application runtime. This repository holds durable intent, architectural
+decisions, product understanding, reusable conventions and templates, and operational context.
+Future implementation choices remain open until demonstrated needs justify them.
 
-Create a small but executable foundation aligned with the technologies used at Enerlink:
+The [Project Genesis Convention](docs/conventions/project-genesis.md), its
+[optional template](templates/project/genesis.md), and the
+[manual builder](.ai/prompts/project-genesis.md) are available for use in projects that benefit
+from an explicit statement of durable intent. They require no Atlas application.
 
-- Python backend
-- TypeScript frontend
-- GraphQL contract
-- PostgreSQL persistence
-- Docker-based local development
-- Initial documentation and architectural decisions
+## Start here
+
+- [Genesis](genesis.md): why Atlas exists and what must remain true.
+- [Documentation index](docs/README.md): maintained understanding and decision history.
+- [Product vision](docs/product/vision.md): practical value and evaluation.
+- [Architecture overview](docs/architecture/overview.md): accepted constraints and current state.
+- [Current task](.ai/tasks/current.md) and [handoff](docs/handoffs/current-context.md): working state.
+- [AGENTS.md](AGENTS.md): repository collaboration and authority rules.
 
 ## Repository structure
 
 ```text
 atlas/
-├── apps/
-│   ├── api/
-│   └── web/
+├── genesis.md
+├── AGENTS.md
+├── README.md
+├── .gitignore
+├── .ai/
+│   ├── README.md
+│   ├── context.md
+│   ├── prompts/
+│   └── tasks/
+│       ├── current.md
+│       └── archive/
 ├── docs/
-│   ├── product/
-│   ├── conventions/
-│   ├── architecture/
+│   ├── README.md
 │   ├── adr/
-│   ├── sprints/
-│   ├── development/
+│   ├── architecture/
+│   ├── conventions/
 │   ├── handoffs/
-│   ├── enerlink/
-│   └── learning/
-├── experiments/
-│   └── ocpp/
-├── infrastructure/
-│   ├── docker/
-│   └── kubernetes/
-├── templates/
-│   └── project/
-├── docker-compose.yml
-└── Makefile
+│   └── product/
+└── templates/
+    └── project/
 ```
 
-See [`docs/README.md`](docs/README.md) for the documentation index and guidance on where project information belongs.
+## Historical application
 
-Atlas currently incubates the [Project Genesis Convention](docs/conventions/project-genesis.md),
-with a reusable [project template](templates/project/genesis.md).
-
-## First run
-
-Requirements:
-
-- Docker with Docker Compose
-
-Run:
-
-```bash
-cp .env.example .env
-docker compose up --build
-```
-
-Then open:
-
-- API health check: http://localhost:8000/health
-- GraphQL: http://localhost:8000/graphql
-- Web: http://localhost:5173
-
-## Initial domain
-
-Sprint 1 starts with five concepts:
-
-- Person
-- Project
-- Technology
-- LearningEntry
-- Decision
-
-The models are intentionally small. Atlas should evolve from real use rather than speculative complexity.
+The July 2026 application was an exploratory learning scaffold associated with Glenn's transition
+into Enerlink. [ADR 0003](docs/adr/0003-retire-initial-learning-application.md) authorizes its
+retirement as an Atlas foundation and supersedes the
+[initial stack decision](docs/adr/0001-initial-stack.md). Retired implementation and support files
+remain recoverable from Git history at `58369c2cf4995081e961993b2232b84a3222692f`.

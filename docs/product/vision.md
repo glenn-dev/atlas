@@ -1,32 +1,39 @@
 # Atlas Vision
 
-## Purpose
+[Genesis](../../genesis.md) defines Atlas's durable purpose and boundaries. This document interprets
+that intent in terms of practical value to Glenn; it does not prescribe a delivery sequence or
+implementation.
 
-Atlas is a personal knowledge and learning platform designed to extend Glenn's ability to remember, organize, learn, and make decisions with the assistance of artificial intelligence.
+## Practical value
 
-## Mission
+Atlas should make it easier to resume meaningful work without reconstructing context from scratch.
+Relevant decisions, learning and source material should remain understandable across changes in
+projects, tools and time.
 
-Build a durable, auditable, and progressively self-managing system that connects people, projects, decisions, learning, documents, and relevant life context while keeping Glenn in control of his data and automated actions.
+Useful connections help Glenn see how people, projects, documents and decisions relate while
+respecting the authority and ownership of their sources. A synthesis is valuable when its evidence
+and uncertainty remain visible enough to support informed judgment.
 
-## Initial use case
+Lower-friction action should preserve Glenn's ability to inspect, bound and revoke delegated work.
+Under Genesis, ultimate authority remains human; authorized delegation need not require interactive
+approval of every individual action.
 
-Atlas will first support Glenn's transition into Enerlink by serving as a structured learning log for Python, TypeScript, AWS, Kubernetes, GraphQL, and OCPP.
+## Evaluating usefulness
 
-## Long-term direction
+A proposed capability should answer concrete questions grounded in actual use:
 
-Atlas may evolve into:
+- What relevant context is currently expensive to recover, understand or connect?
+- How would it make a decision better informed or useful action easier?
+- Can the supporting sources, changes and uncertainty be understood?
+- Does the benefit exceed the attention and maintenance it requires?
 
-1. A personal knowledge system.
-2. A hybrid local/cloud AI assistant.
-3. A platform of specialized assistants.
-4. A potentially reusable product whose users retain ownership of their data.
+These questions apply equally to a useful document or convention and to a future tool. Current
+repository work includes the [Project Genesis Convention](../conventions/project-genesis.md) and
+its manual adoption workflow. Future capabilities should arise from demonstrated needs.
 
-## Non-goals for the first version
+## Present scope
 
-Atlas will not initially:
-
-- act autonomously without review;
-- ingest confidential employer data;
-- implement a full knowledge graph;
-- support multiple users;
-- optimize prematurely for large-scale deployment.
+The initial learning application has been retired under
+[ADR 0003](../adr/0003-retire-initial-learning-application.md). Atlas currently has no application
+runtime or selected replacement architecture. Its future interfaces, storage, agents and automation
+remain open; product interpretation does not turn those possibilities into commitments.

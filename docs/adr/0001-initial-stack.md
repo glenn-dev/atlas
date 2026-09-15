@@ -1,7 +1,9 @@
 # ADR 0001: Initial application stack
 
-- Status: Accepted
+- Status: Superseded
 - Date: 2026-07-24
+- Superseded by: [ADR 0003](0003-retire-initial-learning-application.md)
+- Superseded on: 2026-09-14
 
 ## Context
 

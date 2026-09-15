@@ -2,111 +2,59 @@
 
 Updated: 2026-09-14
 
-## State
+## State and next action
 
-The formal Atlas Genesis checkpoint is complete. Glenn explicitly approved [Atlas Genesis](../../genesis.md),
-committed as `726f4ad1fd643d92456b114bfc08bade8b37a031` (`docs: establish Atlas genesis`) and
-pushed to `origin/master`. The completed task is
-[archived](../../.ai/tasks/archive/2026-09-14-establish-atlas-genesis.md).
+The approved Atlas v0.1 retirement checkpoint is prepared in the working tree for Glenn's review.
+No changes are staged, committed or pushed. The
+[current execution task](../../.ai/tasks/current.md) records validation and review state; the
+[completed planning record](../../.ai/tasks/archive/2026-09-14-post-genesis-retirement-planning.md)
+preserves the approved scope and refinements.
 
-The repository still contains the legacy FastAPI/Strawberry, React/Vite, PostgreSQL, and Docker
-Compose learning scaffold and two accepted ADRs. Glenn's Foundation Review establishes that
-Atlas originated earlier in conversations about AI memory, capabilities, tools, and durable
-personal context. The application is historical implementation, not Atlas's identity or required
-future foundation. Retirement is a separate later task.
+Before execution, branch `master`, HEAD and refreshed `origin/master` were
+`58369c2cf4995081e961993b2232b84a3222692f`, with 0/0 ahead/behind and a clean working tree.
+Retired files remain recoverable from Git history at that baseline.
 
-Atlas now incubates a documented Project Genesis Convention and a reusable project template.
-The convention defines a root-level `genesis.md` as slow-moving, durable project intent and
-integrates Genesis alignment into agent workflow.
+The working tree now contains no application runtime. It retains durable intent, architectural
+constraints, product interpretation, conventions, templates and operational context. No replacement
+architecture, datastore, interface, roadmap, sprint or implementation was selected.
 
-Project Genesis Convention v0.1 is approved and preserved at
-[`../conventions/project-genesis.md`](../conventions/project-genesis.md). Its reusable scaffold is
-[`../../templates/project/genesis.md`](../../templates/project/genesis.md), and its manual builder
-is [`.ai/prompts/project-genesis.md`](../../.ai/prompts/project-genesis.md). The convention defines
-the practice, the template scaffolds the document, and the builder guides evidence-based,
-human-reviewed use in another repository.
+## Authority and decisions
 
-## Current focus
+[Genesis](../../genesis.md) remains unchanged and governs durable intent. Human authority is
+ultimate; authorized delegation is inspectable, bounded and revocable and need not require
+interactive approval of every action.
 
-The convention, template, agent alignment, and manual builder are complete. A subsequent
-architecture checkpoint froze D1–D5 in
-[`../adr/0002-sovereign-knowledge-and-project-boundaries.md`](../adr/0002-sovereign-knowledge-and-project-boundaries.md).
-They establish independence; sovereign, portable knowledge; separation of providers, models,
-agents, interfaces, and actors; project authority with provenance; and meaningful-change-based
-Project → Atlas flow.
+[ADR 0002](../adr/0002-sovereign-knowledge-and-project-boundaries.md) remains Accepted and unchanged.
+[ADR 0003](../adr/0003-retire-initial-learning-application.md) accepts and authorizes retirement under
+Genesis and ADR 0002, supersedes ADR 0001, and explains the coherent retirement checkpoint.
+ADR 0001 retains its original decision body and date.
 
-The accepted Genesis preserves ultimate human authority while
-allowing authorized, inspectable, bounded, and revocable delegation without interactive approval
-for every action. Glenn accepted 2026-07-08 as the historical reference for “First written,” now
-recorded in Genesis. It is not an exact timestamp of conception. The date provenance item is resolved.
+The old browser-verification task remains historically Blocked. Its browser follow-up and recorded
+frontend type errors are retired obligations, not successful new validation. Historical references
+to deleted documents now identify the original repository path and full baseline in plain text;
+no hosting-provider URL is needed to recover them.
 
-The [current task](../../.ai/tasks/current.md) defines post-Genesis reconciliation and legacy v0.1
-retirement planning. It remains planned, not started, and does not authorize deletion. The Genesis
-authority-model hardening was approved, committed as `4ae5c3b`, and pushed to `origin/master`.
-The [Genesis archive](../../.ai/tasks/archive/2026-09-14-establish-atlas-genesis.md)
-preserves reconciliation findings and the smallest document set. The Learning Log milestone, Enerlink-first
-direction, staged roadmap, privileged Technology/LearningEntry concepts, and PostgreSQL foundation
-assumption are historical direction. They are not authorization for future work. ADR 0001 remains
-unchanged historical evidence; any supersession requires a separate explicit architectural task.
-ADR 0002 remains accepted and consistent with Genesis.
+## Retained work and open choices
 
-The concrete Project → Atlas boundary and implementation remain deferred. The archived
-frontend-to-GraphQL task's manual browser check remains a historical open item to disposition
-during retirement, not a Genesis acceptance criterion. Runtime was not reverified here.
+The [Project Genesis Convention](../conventions/project-genesis.md),
+[template](../../templates/project/genesis.md) and
+[manual builder](../../.ai/prompts/project-genesis.md) remain unchanged and useful without a runtime.
+The [Genesis archive](../../.ai/tasks/archive/2026-09-14-establish-atlas-genesis.md) preserves the
+Foundation Review and the resolved historical “First written” date.
 
-## Architectural understanding
-
-- D1–D5 are frozen architectural constraints, not an implementation specification.
-- Atlas must retain its identity, durable knowledge, and fundamental continuity independently of
-  any particular provider, model, agent, or interface.
-- Canonical durable knowledge stays under Glenn's control in open, portable, reconstructable
-  forms. Git is foundational; GitHub and external processing or indexing services are replaceable.
-- Providers, models, agents, interfaces, and human actors are distinct; future work should center
-  intent, context, constraints, and required capabilities without prematurely defining a
-  universal protocol or exhaustive taxonomy.
-- Each project owns its domain and project-local state. Atlas owns transversal ecosystem
-  knowledge and relationships, preserves provenance, and distinguishes canonical project
-  information from derived, observed, or inferred information.
-- Project → Atlas integration should eventually elevate meaningful durable changes or checkpoints,
-  not raw activity. If a change does not alter what Atlas should know, it need not be elevated.
-- Atlas should extract reusable needs from real project work instead of building a speculative
-  platform in advance.
-- `local-agent-bridge` is conceptually infrastructure for controlled local-agent capabilities,
-  not the owner of project intent or the Project Genesis Convention.
-- The manual Genesis workflow does not require `local-agent-bridge`.
-
-## Deliberately deferred
-
-- Execution of the next task's documentation reconciliation and legacy v0.1 retirement planning.
-- Legacy application retirement and explicit review of ADR 0001's future status.
-- A Project Genesis Skill.
-- Automated project discovery or registry and automated cross-project Genesis access.
-- Project → Atlas ingestion or a concrete `ProjectEvent` schema.
-- Project change journals, including `work_logs.md`.
-- Adapters, agent or capability registries, automation, orchestration, and a universal agent
-  protocol or exhaustive capability taxonomy.
-- Additional `local-agent-bridge` capabilities or repository changes.
-- Larger Atlas architecture work not required by current projects.
-
-## Important constraints
-
-- Documentation is the durable project context; update it when decisions or operating procedures change.
-- A project's Genesis is durable intent and should not be rewritten during ordinary feature work.
-- Human review is authoritative for final Genesis content.
-- Do not place employer secrets, customer information, proprietary code, credentials, or internal URLs in Atlas.
-- Do not elevate Atlas infrastructure work above Gouda, Aces, inmundus, or other
-  value-producing projects merely to build ahead of demand.
+Future architecture, storage, interfaces, agents, automation and implementation choices remain
+open until demonstrated needs justify them. Ingestion, registries, schemas, journals, Skills,
+orchestration and `local-agent-bridge` work remain unimplemented and unauthorized by this checkpoint.
+No sibling repository, external data or Docker resource was changed.
 
 ## Useful entry points
 
-- Accepted durable intent: [Atlas Genesis](../../genesis.md)
-- Product direction: [`../product/vision.md`](../product/vision.md)
-- Project Genesis Convention: [`../conventions/project-genesis.md`](../conventions/project-genesis.md)
-- Manual Project Genesis builder: [`../../.ai/prompts/project-genesis.md`](../../.ai/prompts/project-genesis.md)
-- Current task: [`../../.ai/tasks/current.md`](../../.ai/tasks/current.md)
-- Architecture: [`../architecture/overview.md`](../architecture/overview.md)
-- Sovereign knowledge and project boundaries:
-  [`../adr/0002-sovereign-knowledge-and-project-boundaries.md`](../adr/0002-sovereign-knowledge-and-project-boundaries.md)
-- Current sprint: [`../sprints/current.md`](../sprints/current.md)
-- Local setup: [`../development/setup.md`](../development/setup.md)
-- Troubleshooting: [`../development/troubleshooting.md`](../development/troubleshooting.md)
+- [Working context](../../.ai/context.md)
+- [Documentation index](../README.md)
+- [Product vision](../product/vision.md)
+- [Architecture overview](../architecture/overview.md)
+- [Conceptual vocabulary and provenance](../architecture/domain-model.md)
+- [AGENTS.md](../../AGENTS.md)
+
+Review the complete diff and validation results before authorizing a commit. Keep the single active
+execution task until this review is resolved; do not invent follow-on work to populate the repository.
