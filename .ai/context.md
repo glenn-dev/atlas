@@ -2,7 +2,7 @@
 
 ## Last updated
 
-2026-09-14
+2026-09-16
 
 ## Purpose and authority
 
@@ -14,6 +14,9 @@ interactive approval for every action. Apply [AGENTS.md](../AGENTS.md)'s authori
 ## Repository and checkpoint state
 
 - Branch: `master`; default branch: `master`.
+- Research and documentation-preparation baseline: after `git fetch origin`, HEAD and refreshed
+  `origin/master` were `ba51bd04f6dd3b057f68066ff51db40bd7f3434f`
+  (`docs: close Atlas v0.1 retirement`), ahead/behind 0/0, with a clean working tree and index.
 - Historical retirement planning and execution baseline: `58369c2cf4995081e961993b2232b84a3222692f`.
 - Completed retirement checkpoint: `38e2057be8973b7075a92901c40cba16c8b1cd62`
   (`refactor: retire initial Atlas learning application`), explicitly reviewed by Glenn, committed
@@ -28,6 +31,25 @@ interactive approval for every action. Apply [AGENTS.md](../AGENTS.md)'s authori
 - [Current task state](tasks/current.md): no active task and no authorized follow-on implementation.
 - The application and approved support material are removed. The repository is deliberately
   runtime-less; no replacement architecture or implementation has been selected.
+
+## Completed research, pending conceptual decisions
+
+The [transversal-knowledge research checkpoint](../docs/research/2026-09-16-transversal-knowledge-and-practices.md)
+is complete and its findings are preserved for review. Glenn approved only the five-file
+documentation-preservation scope. The prepared changes are uncommitted and await review;
+staging, committing and pushing are not authorized.
+
+The model, candidate engineering practices, Apply / Review / Learn semantics and execution-policy
+analysis remain non-normative proposals. No transversal practice or reusable execution policy has
+been adopted through this checkpoint. No project automatically adopts guidance; project-local
+authority is unchanged. GPT-5.6 Sol or higher is a current operational preference, not durable
+identity or architecture; the English default is still a proposed future communication convention.
+
+The next meaningful action is human review of the three questions in the report: initial advisory
+authority and selective adoption; promotion authority and evidence; and the placement and scope of
+working preferences. Those decisions remain unresolved. No distribution, synchronization, registry,
+CLI, Skill, runtime, agent or orchestration mechanism is selected or authorized. Implementation
+and distribution choices remain open; there is no follow-on implementation task.
 
 ## Architectural understanding
 
@@ -78,8 +100,9 @@ unimplemented and are not a queue of authorized work. The manual Genesis workflo
 
 ## Re-entry
 
-The retirement checkpoint is complete and pushed. [Current task state](tasks/current.md) and
-[the handoff](../docs/handoffs/current-context.md) record that no follow-on implementation is
-authorized. Future work remains driven by demonstrated needs; no feature, sprint or roadmap is
-created by this closure. Preserve confidentiality and external authority boundaries under Genesis
-and AGENTS.
+The research checkpoint is complete and preserved for human conceptual review; its documentation
+changes await review and remain uncommitted. The earlier retirement checkpoint is complete and
+pushed. [Current task state](tasks/current.md) and [the handoff](../docs/handoffs/current-context.md)
+record no active task and no authorized follow-on implementation. Read the report's unresolved
+questions without treating its recommendations as instructions or accepted policy. Preserve
+confidentiality and external authority boundaries under Genesis and AGENTS.

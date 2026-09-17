@@ -29,12 +29,19 @@ answered, as defined in [AGENTS.md](../AGENTS.md).
 - [Manual Project Genesis builder](../.ai/prompts/project-genesis.md): evidence-based,
   human-reviewed workflow.
 
+## Research awaiting conceptual review
+
+- [Reusable transversal knowledge and practices](research/2026-09-16-transversal-knowledge-and-practices.md):
+  completed research preserved as non-normative proposals, not accepted policy. No candidate
+  practice, execution policy, automatic project adoption or distribution mechanism is adopted.
+
 ## Where information belongs
 
 - `product/`: practical product interpretation under Genesis.
 - `architecture/`: maintained architectural understanding and conceptual vocabulary.
 - `adr/`: durable decision history, including superseded decisions.
 - `conventions/`: Atlas-incubated practices intended for reuse.
+- `research/`: evidence, alternatives and proposals with explicit status; preservation is not adoption.
 - `handoffs/`: current re-entry context.
 - [`.ai/`](../.ai/README.md): collaboration workflows, working context and task records.
 

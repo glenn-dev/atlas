@@ -1,8 +1,32 @@
 # Current Project Context
 
-Updated: 2026-09-14
+Updated: 2026-09-16
 
 ## State and next action
+
+The [transversal-knowledge research checkpoint](../research/2026-09-16-transversal-knowledge-and-practices.md)
+is complete; its findings are preserved for review as non-normative proposals. Glenn approved
+five-file documentation preservation, not acceptance of the conceptual model, candidate practices
+or execution policy. The prepared documentation changes remain uncommitted and await review;
+staging, committing and pushing are not authorized.
+
+No transversal practice or reusable execution policy has been adopted through this checkpoint.
+Apply / Review / Learn are proposed semantics, not implemented mechanisms. No project automatically
+adopts Atlas guidance, and project-local authority remains unchanged. GPT-5.6 Sol or higher remains
+a current operational preference rather than durable identity or architecture; the English default
+remains a recommendation for a future communication convention.
+
+The next meaningful action is human review of the report's three unresolved questions: initial
+advisory authority and selective adoption; promotion authority and evidence; and placement and scope
+of working preferences. No distribution, synchronization, registry, CLI, Skill, runtime, agent or
+orchestration mechanism is selected or authorized. Implementation and distribution remain open;
+no follow-on implementation task is created.
+
+Before research and again before preservation edits, `git fetch origin` verified branch `master`,
+HEAD and refreshed `origin/master` at `ba51bd04f6dd3b057f68066ff51db40bd7f3434f`
+(`docs: close Atlas v0.1 retirement`), ahead/behind 0/0, with a clean working tree and index.
+
+## Earlier retirement checkpoint
 
 Atlas v0.1 retirement is complete. Glenn explicitly passed the final semantic review and approved
 the exact checkpoint, committed as `38e2057be8973b7075a92901c40cba16c8b1cd62`
@@ -60,5 +84,5 @@ No sibling repository, external data or Docker resource was changed.
 - [AGENTS.md](../../AGENTS.md)
 
 [Current task state](../../.ai/tasks/current.md): no active task. No follow-on implementation is
-currently authorized. Future choices remain open and driven by demonstrated needs; this closure
-creates no new implementation, architecture, runtime or work queue.
+currently authorized. Research preservation does not resolve the conceptual questions or create
+accepted policy, an implementation, an architecture or a work queue.
