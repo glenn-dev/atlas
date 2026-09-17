@@ -1,6 +1,6 @@
 # Current Project Context
 
-Updated: 2026-09-16
+Updated: 2026-09-17
 
 ## State and next action
 
@@ -23,13 +23,13 @@ two-way feedback flows are accepted, not the research's detailed Apply / Review 
 or other candidate engineering practices and recommendations. The replaceable current model
 preference is maintained in [working context](../../.ai/context.md#current-delegated-execution-preference).
 
-The approved five-file documentation change is prepared and awaiting semantic review; its wording
-has not yet received final approval. These changes are unstaged and uncommitted. Staging, committing
-and pushing are not authorized. The next action is Glenn's review of the prepared documentation.
-
-Before this preparation, `git fetch origin` verified branch `master`, HEAD and refreshed
-`origin/master` at `dd4e815a75700cb94aad1425dac716124c51b1dd`, ahead/behind 0/0, with a clean working
-tree and index. The same baseline and clean state were rechecked before editing.
+Glenn passed semantic review of the approved documentation before it was committed as
+`13cc85337d3e0f9e71de2e8ede3150d283002602`
+(`docs: establish transversal practices and learning`) and pushed to `origin/master`. At operational
+closure, `git fetch origin` verified branch `master`, HEAD and refreshed `origin/master` at that
+checkpoint, ahead/behind 0/0, with a clean working tree and index before the closure edits. The
+[completed execution record](../../.ai/tasks/archive/2026-09-16-formalize-transversal-practice-decisions.md)
+preserves the preparation, validation and final checkpoint evidence.
 
 No runtime, distribution, synchronization, registry, CLI, Skill, scheduler, evaluator, learning agent
 or orchestration mechanism is selected or authorized. No follow-on implementation task is created.
@@ -64,9 +64,9 @@ interactive approval of every action.
 Genesis and ADR 0002, supersedes ADR 0001, and explains the coherent retirement checkpoint.
 ADR 0001 retains its original decision body and date.
 
-ADR 0004 records subsequent accepted conceptual decisions; its documentation is awaiting semantic
-review. Genesis, AGENTS, ADRs 0001–0003 and all other files outside the five-file scope remain
-unchanged. The previously observed ADR 0003 historical-navigation issue remains deferred.
+ADR 0004 is accepted and present on remote `master`. Genesis, AGENTS, ADRs 0001–0003 and all other
+files outside the five-file operational-closure scope remain unchanged. The previously observed
+ADR 0003 historical-navigation issue remains deferred.
 
 The old browser-verification task remains historically Blocked. Its browser follow-up and recorded
 frontend type errors are retired obligations, not successful new validation. Historical references
@@ -95,6 +95,6 @@ No sibling repository, external data or Docker resource was changed.
 - [Conceptual vocabulary and provenance](../architecture/domain-model.md)
 - [AGENTS.md](../../AGENTS.md)
 
-[Current task state](../../.ai/tasks/current.md): the single documentation-preparation task is
-awaiting semantic review and explicit approval. Research preservation and subsequent conceptual
-acceptance are separate checkpoints. No implementation or work queue is authorized.
+[Current task state](../../.ai/tasks/current.md): no active task. Research preservation and the
+subsequent accepted ADR 0004 checkpoint remain distinct. No follow-on implementation or work queue
+is authorized.

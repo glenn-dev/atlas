@@ -22,9 +22,9 @@ answered, as defined in [AGENTS.md](../AGENTS.md).
 - [ADR 0003 — Retirement of the initial learning application](adr/0003-retire-initial-learning-application.md):
   Accepted; authorizes retirement without choosing a replacement implementation.
 - [ADR 0004 — Transversal practices and learning](adr/0004-transversal-practices-and-learning.md):
-  accepted conceptual decisions; documentation prepared and awaiting semantic review. Records
-  relevant practice authority, justified deviations, learning and promotion, technical communication
-  and delegated execution capability without selecting implementation mechanisms.
+  Accepted; records relevant practice authority, justified deviations, learning and promotion,
+  technical communication and delegated execution capability without selecting implementation
+  mechanisms.
 
 ## Reusable convention
 

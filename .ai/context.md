@@ -2,7 +2,7 @@
 
 ## Last updated
 
-2026-09-16
+2026-09-17
 
 ## Purpose and authority
 
@@ -14,10 +14,11 @@ interactive approval for every action. Apply [AGENTS.md](../AGENTS.md)'s authori
 ## Repository and checkpoint state
 
 - Branch: `master`; default branch: `master`.
-- Current documentation-preparation baseline: after `git fetch origin`, HEAD and refreshed
-  `origin/master` were `dd4e815a75700cb94aad1425dac716124c51b1dd`
-  (`docs: preserve transversal knowledge research`), ahead/behind 0/0, with a clean working tree
-  and index. The same baseline and clean state were rechecked before these edits.
+- Completed ADR 0004 checkpoint: `13cc85337d3e0f9e71de2e8ede3150d283002602`
+  (`docs: establish transversal practices and learning`). Glenn passed semantic review before the
+  commit, and the checkpoint was pushed to `origin/master`.
+- At operational closure, HEAD and refreshed `origin/master` matched that checkpoint, ahead/behind
+  0/0, with a clean working tree and index before the closure edits.
 - Historical retirement planning and execution baseline: `58369c2cf4995081e961993b2232b84a3222692f`.
 - Completed retirement checkpoint: `38e2057be8973b7075a92901c40cba16c8b1cd62`
   (`refactor: retire initial Atlas learning application`), explicitly reviewed by Glenn, committed
@@ -29,8 +30,7 @@ interactive approval for every action. Apply [AGENTS.md](../AGENTS.md)'s authori
   references use plain-text repository paths plus the baseline rather than provider URLs.
 - The [completed execution record](tasks/archive/2026-09-14-retire-initial-atlas-learning-application.md)
   preserves preparation, validation, final approval and commit/push evidence.
-- [Current task state](tasks/current.md): five-file documentation preparation, awaiting semantic
-  review; no authorized follow-on implementation.
+- [Current task state](tasks/current.md): no active task and no authorized follow-on implementation.
 - The application and approved support material are removed. The repository is deliberately
   runtime-less; no replacement architecture or implementation has been selected.
 
@@ -58,9 +58,9 @@ Apply / Review / Learn procedures, other recommendations and candidate engineeri
 non-normative. No runtime, distribution, synchronization, registry, CLI, Skill, scheduler, evaluator,
 learning agent or orchestration mechanism is selected or authorized.
 
-The approved five-file documentation change is prepared and awaiting semantic review. These new
-changes are unstaged and uncommitted; staging, committing and pushing are not authorized. The next
-action is review of the prepared wording, not renewed acceptance of already accepted concepts.
+ADR 0004 is accepted and present on remote `master`. Its
+[completed execution record](tasks/archive/2026-09-16-formalize-transversal-practice-decisions.md)
+preserves preparation, validation, semantic review and checkpoint evidence.
 
 ## Current delegated execution preference
 
@@ -120,10 +120,9 @@ unimplemented and are not a queue of authorized work. The manual Genesis workflo
 
 ## Re-entry
 
-Research preservation and the earlier retirement checkpoint are complete and pushed. Subsequent
-human conceptual decisions are accepted; their five-file documentation is prepared and awaiting
-semantic review. [Current task state](tasks/current.md) and
-[the handoff](../docs/handoffs/current-context.md) describe that single documentation task.
-No follow-on implementation is authorized. Read ADR 0004 for the accepted decisions and preserve
-the research report's historical meaning. Preserve confidentiality and external authority
-boundaries under Genesis and AGENTS.
+Research preservation, the earlier retirement checkpoint and the ADR 0004 checkpoint are complete
+and pushed. [Current task state](tasks/current.md) and
+[the handoff](../docs/handoffs/current-context.md) record that no task is active. No follow-on
+implementation is authorized. Read ADR 0004 for the accepted decisions and preserve the research
+report's historical meaning. Preserve confidentiality and external authority boundaries under
+Genesis and AGENTS.
