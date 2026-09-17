@@ -21,6 +21,10 @@ answered, as defined in [AGENTS.md](../AGENTS.md).
   Accepted; D1–D5 constraints.
 - [ADR 0003 — Retirement of the initial learning application](adr/0003-retire-initial-learning-application.md):
   Accepted; authorizes retirement without choosing a replacement implementation.
+- [ADR 0004 — Transversal practices and learning](adr/0004-transversal-practices-and-learning.md):
+  accepted conceptual decisions; documentation prepared and awaiting semantic review. Records
+  relevant practice authority, justified deviations, learning and promotion, technical communication
+  and delegated execution capability without selecting implementation mechanisms.
 
 ## Reusable convention
 
@@ -29,11 +33,13 @@ answered, as defined in [AGENTS.md](../AGENTS.md).
 - [Manual Project Genesis builder](../.ai/prompts/project-genesis.md): evidence-based,
   human-reviewed workflow.
 
-## Research awaiting conceptual review
+## Historical research
 
 - [Reusable transversal knowledge and practices](research/2026-09-16-transversal-knowledge-and-practices.md):
-  completed research preserved as non-normative proposals, not accepted policy. No candidate
-  practice, execution policy, automatic project adoption or distribution mechanism is adopted.
+  completed and committed/pushed at `dd4e815a75700cb94aad1425dac716124c51b1dd`. The report remains
+  unchanged and non-normative, including its then-unresolved questions. Subsequent human decisions
+  are recorded separately in ADR 0004; the report's other recommendations and candidate engineering
+  practices have not been promoted by this checkpoint.
 
 ## Where information belongs
 

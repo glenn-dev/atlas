@@ -5,26 +5,34 @@ Updated: 2026-09-16
 ## State and next action
 
 The [transversal-knowledge research checkpoint](../research/2026-09-16-transversal-knowledge-and-practices.md)
-is complete; its findings are preserved for review as non-normative proposals. Glenn approved
-five-file documentation preservation, not acceptance of the conceptual model, candidate practices
-or execution policy. The prepared documentation changes remain uncommitted and await review;
-staging, committing and pushing are not authorized.
+is complete and its preservation was committed and pushed as
+`dd4e815a75700cb94aad1425dac716124c51b1dd` (`docs: preserve transversal knowledge research`).
+The report remains unchanged and non-normative, including its then-unresolved questions.
 
-No transversal practice or reusable execution policy has been adopted through this checkpoint.
-Apply / Review / Learn are proposed semantics, not implemented mechanisms. No project automatically
-adopts Atlas guidance, and project-local authority remains unchanged. GPT-5.6 Sol or higher remains
-a current operational preference rather than durable identity or architecture; the English default
-remains a recommendation for a future communication convention.
+Glenn subsequently accepted the decisions recorded in
+[ADR 0004](../adr/0004-transversal-practices-and-learning.md): strong relevant transversal guidance
+with justified material deviations and project-domain sovereignty; critical evaluation before
+normative promotion, initially accepted by Glenn; an English technical-communication default with
+contextual exceptions; and capability-proportional execution with validation regardless of model.
+Exceptions and recurring justified deviations are learning evidence about Atlas's own guidance.
 
-The next meaningful action is human review of the report's three unresolved questions: initial
-advisory authority and selective adoption; promotion authority and evidence; and placement and scope
-of working preferences. No distribution, synchronization, registry, CLI, Skill, runtime, agent or
-orchestration mechanism is selected or authorized. Implementation and distribution remain open;
-no follow-on implementation task is created.
+Presumed applicability depends on relevance; genuinely inapplicable guidance needs no exception.
+Alignment, justified deviation, unjustified or unexplained deviation, non-applicability and
+insufficient evidence remain distinct without a mandatory compliance taxonomy. Only the minimum
+two-way feedback flows are accepted, not the research's detailed Apply / Review / Learn procedures
+or other candidate engineering practices and recommendations. The replaceable current model
+preference is maintained in [working context](../../.ai/context.md#current-delegated-execution-preference).
 
-Before research and again before preservation edits, `git fetch origin` verified branch `master`,
-HEAD and refreshed `origin/master` at `ba51bd04f6dd3b057f68066ff51db40bd7f3434f`
-(`docs: close Atlas v0.1 retirement`), ahead/behind 0/0, with a clean working tree and index.
+The approved five-file documentation change is prepared and awaiting semantic review; its wording
+has not yet received final approval. These changes are unstaged and uncommitted. Staging, committing
+and pushing are not authorized. The next action is Glenn's review of the prepared documentation.
+
+Before this preparation, `git fetch origin` verified branch `master`, HEAD and refreshed
+`origin/master` at `dd4e815a75700cb94aad1425dac716124c51b1dd`, ahead/behind 0/0, with a clean working
+tree and index. The same baseline and clean state were rechecked before editing.
+
+No runtime, distribution, synchronization, registry, CLI, Skill, scheduler, evaluator, learning agent
+or orchestration mechanism is selected or authorized. No follow-on implementation task is created.
 
 ## Earlier retirement checkpoint
 
@@ -56,6 +64,10 @@ interactive approval of every action.
 Genesis and ADR 0002, supersedes ADR 0001, and explains the coherent retirement checkpoint.
 ADR 0001 retains its original decision body and date.
 
+ADR 0004 records subsequent accepted conceptual decisions; its documentation is awaiting semantic
+review. Genesis, AGENTS, ADRs 0001–0003 and all other files outside the five-file scope remain
+unchanged. The previously observed ADR 0003 historical-navigation issue remains deferred.
+
 The old browser-verification task remains historically Blocked. Its browser follow-up and recorded
 frontend type errors are retired obligations, not successful new validation. Historical references
 to deleted documents now identify the original repository path and full baseline in plain text;
@@ -83,6 +95,6 @@ No sibling repository, external data or Docker resource was changed.
 - [Conceptual vocabulary and provenance](../architecture/domain-model.md)
 - [AGENTS.md](../../AGENTS.md)
 
-[Current task state](../../.ai/tasks/current.md): no active task. No follow-on implementation is
-currently authorized. Research preservation does not resolve the conceptual questions or create
-accepted policy, an implementation, an architecture or a work queue.
+[Current task state](../../.ai/tasks/current.md): the single documentation-preparation task is
+awaiting semantic review and explicit approval. Research preservation and subsequent conceptual
+acceptance are separate checkpoints. No implementation or work queue is authorized.
