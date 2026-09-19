@@ -1,6 +1,6 @@
 # ADR 0004: Transversal practices and learning
 
-- Status: Accepted conceptual decisions; documentation prepared for semantic review
+- Status: Accepted; documentation passed semantic review
 - Date: 2026-09-16
 - Authority: Glenn's subsequent human conceptual review and applicability clarification
 
@@ -10,8 +10,8 @@ The [September 16 research report](../research/2026-09-16-transversal-knowledge-
 preserved three unresolved human-decision questions. Research preservation was committed and
 pushed as `dd4e815a75700cb94aad1425dac716124c51b1dd`; it did not accept the report's proposals.
 Glenn subsequently accepted the decisions recorded here and authorized their documentation.
-The wording of this ADR is awaiting semantic review; the underlying conceptual decisions have
-already been accepted.
+Glenn subsequently passed semantic review of the exact documentation checkpoint, as recorded in
+the [completed execution record](../../.ai/tasks/archive/2026-09-16-formalize-transversal-practice-decisions.md).
 
 The report remains an unchanged, historical, non-normative record. In particular, its recommendation
 of advisory guidance with selective project adoption differs from the subsequently accepted

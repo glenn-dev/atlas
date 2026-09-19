@@ -2,7 +2,7 @@
 
 ## Last updated
 
-2026-09-17
+2026-09-19
 
 ## Purpose and authority
 
@@ -30,7 +30,8 @@ interactive approval for every action. Apply [AGENTS.md](../AGENTS.md)'s authori
   references use plain-text repository paths plus the baseline rather than provider URLs.
 - The [completed execution record](tasks/archive/2026-09-14-retire-initial-atlas-learning-application.md)
   preserves preparation, validation, final approval and commit/push evidence.
-- [Current task state](tasks/current.md): no active task and no authorized follow-on implementation.
+- [Current task state](tasks/current.md) owns the formalization scope, validation and commit
+  authorization state; consult it for execution status.
 - The application and approved support material are removed. The repository is deliberately
   runtime-less; no replacement architecture or implementation has been selected.
 
@@ -53,10 +54,12 @@ Presumed applicability is conditional on relevance. Genuinely inapplicable guida
 exception. Alignment, justified deviation, unjustified or unexplained deviation, non-applicability
 and insufficient evidence remain distinguishable without a mandatory compliance taxonomy.
 
-Only the minimum two-way conceptual feedback flows are accepted. The research's detailed proposed
-Apply / Review / Learn procedures, other recommendations and candidate engineering practices remain
-non-normative. No runtime, distribution, synchronization, registry, CLI, Skill, scheduler, evaluator,
-learning agent or orchestration mechanism is selected or authorized.
+The [practices index](../docs/practices/README.md) now locates transversal guidance and its canonical
+definitions. [ADR 0005](../docs/adr/0005-foundational-transversal-practices.md) records the subsequently
+accepted foundational concepts and placement; Glenn approved their exact reconciled wording on 2026-09-19.
+The research itself remains non-normative, including its detailed Apply / Review / Learn procedures.
+No runtime, distribution, synchronization, registry, CLI, Skill, scheduler, evaluator, learning agent
+or orchestration mechanism is selected or authorized.
 
 ADR 0004 is accepted and present on remote `master`. Its
 [completed execution record](tasks/archive/2026-09-16-formalize-transversal-practice-decisions.md)
@@ -121,8 +124,7 @@ unimplemented and are not a queue of authorized work. The manual Genesis workflo
 ## Re-entry
 
 Research preservation, the earlier retirement checkpoint and the ADR 0004 checkpoint are complete
-and pushed. [Current task state](tasks/current.md) and
-[the handoff](../docs/handoffs/current-context.md) record that no task is active. No follow-on
-implementation is authorized. Read ADR 0004 for the accepted decisions and preserve the research
-report's historical meaning. Preserve confidentiality and external authority boundaries under
+and pushed. Resume through [current task state](tasks/current.md); use the practices index for
+guidance and [the handoff](../docs/handoffs/current-context.md) for re-entry pointers. Preserve the
+research report's historical meaning and confidentiality and external authority boundaries under
 Genesis and AGENTS.
