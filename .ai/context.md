@@ -13,33 +13,19 @@ interactive approval for every action. Apply [AGENTS.md](../AGENTS.md)'s authori
 
 ## Repository and checkpoint state
 
-- Branch: `master`; default branch: `master`.
-- Latest completed checkpoint: `3ad4ae05a21a7acc7d7d769c0d2ddc098beee6d3`
-  (`docs: establish foundational transversal practices`). Before preservation edits on September 20,
-  HEAD, cached `origin/master` and a fresh read-only remote query matched, ahead/behind 0/0, with a
-  clean working tree and index. No fetch was performed. The
-  [completed practices record](tasks/archive/2026-09-18-formalize-foundational-transversal-practices.md)
-  preserves closure evidence separately from its historical preparation and validation state.
-- Completed ADR 0004 checkpoint: `13cc85337d3e0f9e71de2e8ede3150d283002602`
-  (`docs: establish transversal practices and learning`). Glenn passed semantic review before the
-  commit, and the checkpoint was pushed to `origin/master`.
-- At operational closure, HEAD and refreshed `origin/master` matched that checkpoint, ahead/behind
-  0/0, with a clean working tree and index before the closure edits.
-- Historical retirement planning and execution baseline: `58369c2cf4995081e961993b2232b84a3222692f`.
-- Completed retirement checkpoint: `38e2057be8973b7075a92901c40cba16c8b1cd62`
-  (`refactor: retire initial Atlas learning application`), explicitly reviewed by Glenn, committed
-  and pushed to `origin/master`.
-- Before operational closure edits, `git fetch origin` verified HEAD and refreshed `origin/master`
-  at the retirement checkpoint, with 0/0 ahead/behind and a clean working tree.
-- Glenn approved the [disposition plan](tasks/archive/2026-09-14-post-genesis-retirement-planning.md)
-  and two refinements: ADR 0003 authorizes retirement in this checkpoint, and retired historical
-  references use plain-text repository paths plus the baseline rather than provider URLs.
-- The [completed execution record](tasks/archive/2026-09-14-retire-initial-atlas-learning-application.md)
-  preserves preparation, validation, final approval and commit/push evidence.
-- [Current task state](tasks/current.md) owns the September 20 documentation-preservation scope,
-  validation and review state. No experiment is authorized by that documentation task.
-- The application and approved support material are removed. The repository is deliberately
-  runtime-less; no replacement architecture or implementation has been selected.
+- Branch: `master`; cached default branch: `master`.
+- Research-preservation checkpoint: `2236086bb5075ad16148c4f51981897c187bd0f9`
+  (`docs: preserve capability-gap research`). Before these closure edits, HEAD and cached
+  `origin/master` matched, ahead/behind 0/0, with a clean working tree and index. No fetch or
+  live remote query was performed; live remote state and unrecorded approvals are not inferred.
+- The [research-preservation archive](tasks/archive/2026-09-20-preserve-existing-capabilities-research.md)
+  owns preparation history, checkpoint evidence and this closure's validation/review state.
+- The [foundational-practices archive](tasks/archive/2026-09-18-formalize-foundational-transversal-practices.md)
+  owns the earlier `3ad4ae05a21a7acc7d7d769c0d2ddc098beee6d3` checkpoint's history and closure.
+  Prior ADR 0004 and retirement execution evidence remains in their existing archives.
+- [Current task state](tasks/current.md): no active task and no queued experiment.
+- The repository remains deliberately runtime-less; no replacement architecture or implementation
+  has been selected.
 
 ## Research preserved; subsequent decisions accepted
 
@@ -71,21 +57,21 @@ ADR 0004 is accepted and present on remote `master`. Its
 [completed execution record](tasks/archive/2026-09-16-formalize-transversal-practice-decisions.md)
 preserves preparation, validation, semantic review and checkpoint evidence.
 
-## Existing-capabilities research; experiment remains unverified
+## Existing-capabilities research and later observation
 
 The [September 20 research](../docs/research/2026-09-20-existing-capabilities-and-atlas-owned-gaps.md)
-preserves findings, external sources, limitations and a proposed discriminating experiment.
-Atlas-owned durable meaning, provenance and human/domain authority remain distinct from replaceable
-execution capabilities. The demonstrated manual message-bus friction does not yet establish a need
-for custom software. The current evidence-backed recommendation is to adopt/configure existing
-capabilities first, not rebuild execution or general infrastructure; this is not a permanent ban.
+preserves its original checkpoint unchanged, with a separately dated
+[post-checkpoint addendum](../docs/research/2026-09-20-existing-capabilities-and-atlas-owned-gaps.md#post-checkpoint-addendum-2026-09-20)
+owning Glenn's reported direct Work → repository observation and the assessment's narrower
+corroboration through local reads.
 
-Local ChatGPT Work → existing Codex noninteractive execution → Work is an unverified experiment
-hypothesis, not an accepted or working architecture. The proposed first trial is read-only against
-a disposable/synthetic repository, including result return, session continuation and boundary
-handling. It requires separate authorization; neither the trial nor sandbox creation has occurred.
-Failure must be diagnosed before considering a thin adapter, whose ownership remains undecided.
-The research owns the detailed success criteria and failure interpretation.
+The current recommendation is to prefer direct Work → repository for suitable real work within
+demonstrated capability and task authority, reconsidering another layer when a concrete limitation
+warrants it. The evidence covers read-only inspection and evidence return; it does not validate
+editing, testing, commit/push or general engineering execution. Work is not mandatory and does not
+replace Codex. The original Work → Codex experiment remains untested and is not queued.
+Preservation selects no architecture or reusable operational policy; the addendum owns the detailed
+provenance, inference and limits.
 
 ## Current delegated execution preference
 
@@ -149,9 +135,9 @@ adapter's need, placement and lifecycle require evidence and a separate decision
 
 ## Re-entry
 
-The September 16 research preservation, retirement, ADR 0004 and foundational-practices checkpoints
-are committed and pushed. September 20 preservation is a separate documentation checkpoint awaiting
-semantic review; consult [current task state](tasks/current.md) for its validation and authorization
-status. Use the practices index for accepted guidance and [the handoff](../docs/handoffs/current-context.md)
-for re-entry. Preserve historical research meaning and confidentiality and external authority
-boundaries under Genesis and AGENTS.
+No active task or experiment is queued. The research-preservation checkpoint is committed;
+Glenn approved the operational closure and requested its commit and push on 2026-09-20,
+as recorded in its archive.
+Use the practices index for accepted guidance and [the handoff](../docs/handoffs/current-context.md)
+for concise re-entry. Return to project work under its own scope and authority; historical proposals
+are not a work queue.

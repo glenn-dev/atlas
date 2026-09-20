@@ -1,5 +1,11 @@
 # Existing Capabilities and Atlas-Owned Gaps
 
+> Historical checkpoint preserved at `2236086bb5075ad16148c4f51981897c187bd0f9`.
+> The original text below is unchanged; its current-state wording and proposed next experiment
+> describe the evidence available at that checkpoint. Later evidence and the revised recommendation
+> appear only in the [September 20 post-checkpoint addendum](#post-checkpoint-addendum-2026-09-20).
+> The original proposal is not a queued task.
+
 Research checkpoint: 2026-09-20. Preserved for semantic review after Glenn approved the exact
 six-file documentation scope. This record condenses the completed conversational investigation;
 it is not a transcript, accepted architecture, implementation plan or new instruction source.
@@ -303,3 +309,52 @@ infrastructure; retire the historical standalone-roadmap presumption. Preserve d
 human/domain authority independently of those replaceable capabilities. Experiment authorization,
 new operational policy, adapter ownership and actual sibling-directory disposition remain separate
 human decisions. This preservation changes no Genesis, accepted ADR or foundational practice.
+
+## Post-checkpoint addendum: 2026-09-20
+
+This addendum records later evidence, after research-preservation commit
+`2236086bb5075ad16148c4f51981897c187bd0f9`. It does not revise the original investigation
+as though this evidence had been available earlier.
+
+### Provenance and demonstrated scope
+
+**Observed external evidence supplied by Glenn:** in the September 20 request beginning
+“We are resuming real Atlas work,” Glenn reported that ChatGPT Work had operated from the existing
+ChatGPT Atlas Project, accessed the explicitly attached local Atlas folder and Git repository,
+retained that source across turns, executed read-only shell/Git inspection, read and reasoned over
+Atlas documentation, and returned repository evidence in the same Work conversation without Glenn
+manually transporting prompts or results through a separate Codex session.
+
+The ensuing read-only closure assessment directly inspected `/Users/glennmarcano/projects/atlas`
+and returned Git and document evidence in the conversation. This corroborates local repository
+inspection and evidence return; the earlier Work interface and cross-turn retention observations
+remain attributed to Glenn's account. No independent replay of that earlier session or fresh
+product-version verification is claimed. The source is that dated conversation and its tool
+results; this is a concise durable account, not a transcript or a general product specification.
+
+**Verified repository evidence:** the assessment found clean `master` at the commit above,
+with an unchanged index and cached `origin/master` at the same commit, ahead/behind 0/0.
+No fetch or live remote query was performed. This establishes cached agreement, not the live
+server state or an unrecorded review, commit or push authorization. The
+[closure record](../../.ai/tasks/archive/2026-09-20-preserve-existing-capabilities-research.md)
+preserves the operational history separately.
+
+### Interpretation, recommendation and limits
+
+**Inference:** direct Work → repository addresses the manual transport problem for the demonstrated
+read-only inspection. The earlier Work → Codex → Work composition was proposed before this direct
+path had been demonstrated. It remains untested; the new observation does not count as executing
+its trial or satisfying its executor-session and boundary-handling criteria.
+
+**Current recommendation:** prefer the simpler direct Work → repository path for suitable real work
+within demonstrated capability and explicit task authority. Assess a concrete limitation when one
+arises before adding another execution or integration layer. This refines the original
+adopt/configure-first recommendation; it does not require another capability experiment before
+returning to project work. Work → Codex remains an option, and custom integration could become
+justified by a demonstrated residual gap. Neither is queued or authorized by this addendum.
+
+The observation does not validate editing, testing, commit/push workflows, general engineering
+execution, permission enforcement, restart recovery or cross-client portability. Preparing this
+documentation closure is not an expanded capability trial. Work does not replace Codex and is not
+a mandatory executor. No Atlas architecture, runtime, reusable operational policy or adapter
+ownership is accepted; Genesis, accepted ADRs and practices retain their existing authority.

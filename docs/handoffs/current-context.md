@@ -4,8 +4,9 @@ Updated: 2026-09-20
 
 ## Re-entry
 
-- [Current task](../../.ai/tasks/current.md): September 20 documentation preservation, validation
-  and semantic-review state. This is the owner of execution and authorization status.
+- [Current task](../../.ai/tasks/current.md): no active task and no queued experiment.
+- [Closure record](../../.ai/tasks/archive/2026-09-20-preserve-existing-capabilities-research.md):
+  checkpoint history and Glenn's September 20 approval of the closure and its commit/push.
 - [Working context](../../.ai/context.md): repository understanding, historical baselines and
   replaceable operational configuration.
 - [Practices index](../practices/README.md): accepted transversal guidance and canonical sources;
@@ -13,18 +14,18 @@ Updated: 2026-09-20
 - [Documentation index](../README.md): other maintained understanding and decision history.
 - [Genesis](../../genesis.md) and [AGENTS](../../AGENTS.md): durable intent and local working rules.
 
-## Research and next boundary
+## Research and re-entry boundary
 
-The [existing-capabilities research](../research/2026-09-20-existing-capabilities-and-atlas-owned-gaps.md)
-owns the qualified findings, source provenance, alternatives and proposed experiment. Manual
-transport friction is demonstrated; a need for custom glue is not. Configuration first remains a
-recommendation, and the local Work → Codex → Work round trip remains unverified.
+The [September 20 research addendum](../research/2026-09-20-existing-capabilities-and-atlas-owned-gaps.md#post-checkpoint-addendum-2026-09-20)
+owns the later direct Work → repository observation, provenance and limits. The original checkpoint
+remains historical. Prefer the direct path for suitable real work within demonstrated capability
+and task authority; the evidence is limited to read-only inspection and evidence return.
 
-Review the documentation checkpoint first. The proposed read-only experiment, repository creation,
-any later write trial and any implementation require separate authorization. Experiment failure
-does not authorize building a bridge. The historical sibling directory is unchanged; future
-adapter ownership remains open. Use the research for detailed criteria rather than treating this
-handoff as an execution instruction.
+Editing, testing, commit/push and general engineering execution are not validated by that observation.
+Work is not mandatory and does not replace Codex. The original Work → Codex experiment remains
+untested and is not queued. Return to project work; a concrete limitation can justify reconsidering
+another layer without making it an assumed roadmap. Atlas remains runtime-less and no architecture
+or operational policy is selected.
 
 ## Historical checkpoints
 
