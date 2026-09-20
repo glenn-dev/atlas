@@ -45,6 +45,11 @@ semantic review on 2026-09-19.
 
 ## Historical research
 
+- [Existing capabilities and Atlas-owned gaps](research/2026-09-20-existing-capabilities-and-atlas-owned-gaps.md):
+  September 20 research preserved for semantic review. Distinguishes Atlas-owned meaning and
+  authority from replaceable capabilities and demonstrated manual transport friction. Configuration
+  first is a recommendation; the Work → Codex → Work experiment remains untested and requires
+  separate authorization. Preservation accepts no architecture or implementation mechanism.
 - [Reusable transversal knowledge and practices](research/2026-09-16-transversal-knowledge-and-practices.md):
   completed and committed/pushed at `dd4e815a75700cb94aad1425dac716124c51b1dd`. The report remains
   unchanged and non-normative, including its then-unresolved questions. Subsequent human decisions

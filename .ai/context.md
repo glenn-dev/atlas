@@ -2,7 +2,7 @@
 
 ## Last updated
 
-2026-09-19
+2026-09-20
 
 ## Purpose and authority
 
@@ -14,6 +14,12 @@ interactive approval for every action. Apply [AGENTS.md](../AGENTS.md)'s authori
 ## Repository and checkpoint state
 
 - Branch: `master`; default branch: `master`.
+- Latest completed checkpoint: `3ad4ae05a21a7acc7d7d769c0d2ddc098beee6d3`
+  (`docs: establish foundational transversal practices`). Before preservation edits on September 20,
+  HEAD, cached `origin/master` and a fresh read-only remote query matched, ahead/behind 0/0, with a
+  clean working tree and index. No fetch was performed. The
+  [completed practices record](tasks/archive/2026-09-18-formalize-foundational-transversal-practices.md)
+  preserves closure evidence separately from its historical preparation and validation state.
 - Completed ADR 0004 checkpoint: `13cc85337d3e0f9e71de2e8ede3150d283002602`
   (`docs: establish transversal practices and learning`). Glenn passed semantic review before the
   commit, and the checkpoint was pushed to `origin/master`.
@@ -30,8 +36,8 @@ interactive approval for every action. Apply [AGENTS.md](../AGENTS.md)'s authori
   references use plain-text repository paths plus the baseline rather than provider URLs.
 - The [completed execution record](tasks/archive/2026-09-14-retire-initial-atlas-learning-application.md)
   preserves preparation, validation, final approval and commit/push evidence.
-- [Current task state](tasks/current.md) owns the formalization scope, validation and commit
-  authorization state; consult it for execution status.
+- [Current task state](tasks/current.md) owns the September 20 documentation-preservation scope,
+  validation and review state. No experiment is authorized by that documentation task.
 - The application and approved support material are removed. The repository is deliberately
   runtime-less; no replacement architecture or implementation has been selected.
 
@@ -64,6 +70,22 @@ or orchestration mechanism is selected or authorized.
 ADR 0004 is accepted and present on remote `master`. Its
 [completed execution record](tasks/archive/2026-09-16-formalize-transversal-practice-decisions.md)
 preserves preparation, validation, semantic review and checkpoint evidence.
+
+## Existing-capabilities research; experiment remains unverified
+
+The [September 20 research](../docs/research/2026-09-20-existing-capabilities-and-atlas-owned-gaps.md)
+preserves findings, external sources, limitations and a proposed discriminating experiment.
+Atlas-owned durable meaning, provenance and human/domain authority remain distinct from replaceable
+execution capabilities. The demonstrated manual message-bus friction does not yet establish a need
+for custom software. The current evidence-backed recommendation is to adopt/configure existing
+capabilities first, not rebuild execution or general infrastructure; this is not a permanent ban.
+
+Local ChatGPT Work → existing Codex noninteractive execution → Work is an unverified experiment
+hypothesis, not an accepted or working architecture. The proposed first trial is read-only against
+a disposable/synthetic repository, including result return, session continuation and boundary
+handling. It requires separate authorization; neither the trial nor sandbox creation has occurred.
+Failure must be diagnosed before considering a thin adapter, whose ownership remains undecided.
+The research owns the detailed success criteria and failure interpretation.
 
 ## Current delegated execution preference
 
@@ -118,13 +140,18 @@ external data deletion was not authorized; no such resources were removed.
 
 Future architecture, storage, interfaces, agents, automation and implementation choices remain open
 until demonstrated needs justify them. Project → Atlas ingestion, event schemas, journals, discovery,
-registries, adapters, Skills, orchestration and additional `local-agent-bridge` capabilities remain
-unimplemented and are not a queue of authorized work. The manual Genesis workflow requires none of them.
+registries, adapters, Skills and orchestration remain unimplemented and are not a queue of authorized
+work. The manual Genesis workflow requires none of them. The inspected `local-agent-bridge`
+directory preserves an unimplemented research concept, not an existing capability or independently
+established project authority. The September 20 recommendation is to stop treating its proposed
+standalone architecture as an assumed roadmap. The sibling directory remains untouched; any future
+adapter's need, placement and lifecycle require evidence and a separate decision.
 
 ## Re-entry
 
-Research preservation, the earlier retirement checkpoint and the ADR 0004 checkpoint are complete
-and pushed. Resume through [current task state](tasks/current.md); use the practices index for
-guidance and [the handoff](../docs/handoffs/current-context.md) for re-entry pointers. Preserve the
-research report's historical meaning and confidentiality and external authority boundaries under
-Genesis and AGENTS.
+The September 16 research preservation, retirement, ADR 0004 and foundational-practices checkpoints
+are committed and pushed. September 20 preservation is a separate documentation checkpoint awaiting
+semantic review; consult [current task state](tasks/current.md) for its validation and authorization
+status. Use the practices index for accepted guidance and [the handoff](../docs/handoffs/current-context.md)
+for re-entry. Preserve historical research meaning and confidentiality and external authority
+boundaries under Genesis and AGENTS.
